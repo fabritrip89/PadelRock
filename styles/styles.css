@@ -13,6 +13,9 @@ a:active {
     text-decoration: none;
 }
 
+
+
+
 /*Logos de pagina*/
 
 .caja1 {
@@ -23,7 +26,6 @@ a:active {
     background: rgb(44, 33, 96);
     background: linear-gradient(90deg, rgba(44, 33, 96, 1) 0%, rgba(249, 246, 246, 0.9448821765034139) 90%);
     border-radius: 10px;
-
 }
 
 .logoPagina {
@@ -35,9 +37,7 @@ a:active {
 .logoPagina1 {
     width: 7rem;
     height: 5rem;
-
 }
-
 
 
 /* Estilo create acount*/
@@ -54,10 +54,25 @@ a:active {
     border-radius: 10px;
 }
 
+section a:hover {
+    text-align: center;
+    transition: 1s;
+    color: red;
+    opacity: 75%;
+    zoom: 125%;
+}
+
+h1:hover {
+    transition: 1s;
+    color: red;
+    opacity: 75%;
+    zoom: 125%;
+    background-color: aliceblue;
+
+}
 
 
 /* Estilos Navegador*/
-
 nav ul {
     list-style-type: none;
     display: flex;
@@ -105,7 +120,10 @@ ul li:hover ul {
 
 /*ESTILO TITULOS*/
 
+
+
 .estilosTitulos {
+
     text-align: center;
     color: rgb(7, 7, 102);
     margin: 10px;
@@ -117,6 +135,54 @@ ul li:hover ul {
     border-radius: 10px;
 
 }
+
+/*Prueba con hover animaciones se cambia a color rojo*/
+main h3:hover {
+    text-align: center;
+    transition: 1s;
+    color: red;
+    margin: 10px;
+    display: block;
+    font-family: 'Tomorrow', sans-serif;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+    border: inset;
+    border-radius: 10px;
+    zoom: 120%;
+
+}
+
+article h3:hover {
+    text-align: center;
+    transition: 1s;
+    color: red;
+    margin: 10px;
+    display: block;
+    font-family: 'Tomorrow', sans-serif;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+    border: inset;
+    border-radius: 10px;
+    zoom: 120%;
+}
+
+footer h3:hover {
+    text-align: center;
+    transition: 1s;
+    color: red;
+    margin: 10px;
+    display: block;
+    font-family: 'Tomorrow', sans-serif;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+    border: inset;
+    border-radius: 10px;
+    zoom: 120%;
+}
+
+
+
+/*Fin de animaciones colores ROJO*/
 
 .padelRock {
     text-align: center;
