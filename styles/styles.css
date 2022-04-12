@@ -260,6 +260,16 @@ th {
     font-weight: bold;
 }
 
+/*estilos de create acount subir imagen o archivo*/
+.pesoPALetaa{
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1rem;
+
+}
+
+
 /*estilos IFRAME*/
 
 .iframeclass {
