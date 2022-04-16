@@ -423,6 +423,8 @@ th {
 
 }
 
+/*/tamaño grande*/
+
 @media screen and (min-width:1200px) {
     body {
         grid-template-columns: repeat(4, 1fr);
@@ -442,7 +444,6 @@ th {
     nav ul {
         list-style-type: none;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         padding: 5px;
         font-family: 'Tomorrow', sans-serif;
