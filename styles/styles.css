@@ -28,6 +28,18 @@ a:active {
     border-radius: 10px;
 }
 
+/*Estilos titulo*/
+
+.titulo{
+    text-align: center;
+    size-adjust: auto;
+
+}
+
+
+
+/*
+
 .logoPagina {
     width: 10rem;
     height: 5rem;
@@ -38,7 +50,7 @@ a:active {
     width: 7rem;
     height: 5rem;
 }
-
+*/
 
 /* Estilo create acount*/
 
