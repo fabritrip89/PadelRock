@@ -41,6 +41,20 @@ a:active {
 
 }
 
+/*Estilos banner*/
+
+.caja2 {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+
+.caja2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    border: inset ;
+}
 
 
 /*
@@ -173,7 +187,7 @@ main h3:hover {
 
 }
 
-main h2{
+main h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -211,11 +225,7 @@ article h1:hover {
 }
 
 
-.loGos {
-    text-align: center;
-    margin: 20px;
-    display: block;
-}
+
 
 .logos_logos {
     text-align: center;
@@ -300,6 +310,14 @@ th {
 
 }
 
+footer {
+    text-align: center;
+    margin: 10px;
+    display: block;
+   
+}
+
+
 /*TAMAÑO TABLET */
 
 
@@ -313,6 +331,7 @@ th {
             "nav nav nav"
             "main main main"
             "article article article"
+            "banner banner banner"
             "footer footer footer"
 
     }
@@ -440,6 +459,7 @@ th {
             "nav nav nav nav"
             "main main main main"
             "article article article article"
+            "banner banner banner banner"
             "footer footer footer footer"
     }
 
@@ -503,7 +523,7 @@ th {
         border-radius: 10px;
     }
 
-    main h2{
+    main h2 {
         display: flex;
         justify-content: space-around;
 
