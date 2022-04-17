@@ -1,9 +1,12 @@
 /*TAMAÑO CELULAR*/
 
 
+
 body {
     display: grid;
     grid-template-columns: 1fr;
+    background-color: rgba(12, 88, 138, 0.427);
+    background: linear-gradient(180deg, rgba(168, 168, 175, 1) 0%, rgba(152, 158, 158, 0.630987429151348) 55%, rgba(0, 212, 255, 0.7178221630449055) 100%);
 }
 
 
@@ -23,16 +26,18 @@ a:active {
     justify-content: center;
     padding: 5px;
     border: 10px;
-    background: rgb(44, 33, 96);
-    background: linear-gradient(90deg, rgba(44, 33, 96, 1) 0%, rgba(249, 246, 246, 0.9448821765034139) 90%);
+    background: rgb(168, 168, 175);
+    background: radial-gradient(circle, rgba(168, 168, 175, 1) 0%, rgba(152, 158, 158, 0.630987429151348) 55%, rgba(0, 212, 255, 0.7178221630449055) 100%);
     border-radius: 10px;
 }
 
 /*Estilos titulo*/
 
-.titulo{
+.titulo {
     text-align: center;
     size-adjust: auto;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: bold;
 
 }
 
@@ -74,6 +79,7 @@ section a:hover {
     zoom: 125%;
 }
 
+/*
 h1:hover {
     transition: 1s;
     color: red;
@@ -82,6 +88,7 @@ h1:hover {
     background-color: aliceblue;
 
 }
+*/
 
 
 /* Estilos Navegador*/
@@ -115,12 +122,14 @@ ul ul {
 
 ul ul li {
     display: flex;
-    width: 50px;
+    width: 7rem;
     padding: 5px;
 }
 
 ul ul li a {
     color: white;
+    width: 10rem;
+
 }
 
 ul li:hover ul {
@@ -164,7 +173,15 @@ main h3:hover {
 
 }
 
-article h3:hover {
+main h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+article h1:hover {
     text-align: center;
     transition: 1s;
     color: red;
@@ -178,19 +195,7 @@ article h3:hover {
     zoom: 120%;
 }
 
-footer h3:hover {
-    text-align: center;
-    transition: 1s;
-    color: red;
-    margin: 10px;
-    display: block;
-    font-family: 'Tomorrow', sans-serif;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
-    border: inset;
-    border-radius: 10px;
-    zoom: 120%;
-}
+
 
 
 
@@ -273,11 +278,12 @@ th {
 }
 
 /*estilos de create acount subir imagen o archivo*/
-.pesoPALetaa{
+.pesoPALetaa {
     font-family: 'Tomorrow', sans-serif;
     font-weight: bold;
     text-align: center;
     padding-top: 1rem;
+    padding: 2rem;
 
 }
 
@@ -444,11 +450,10 @@ th {
     nav ul {
         list-style-type: none;
         display: flex;
-        justify-content: center;
         padding: 5px;
         font-family: 'Tomorrow', sans-serif;
         cursor: pointer;
-        font-size: 35px;
+        font-size: 25px;
         background-color: aliceblue;
         font-family: 'Tomorrow', sans-serif;
         border: inset;
@@ -489,13 +494,19 @@ th {
     .section h2 {
         text-align: right;
         font-family: 'Tomorrow', sans-serif;
-        font-size: 35px;
+        font-size: 25px;
         color: rgb(7, 7, 102);
         background: rgb(255, 255, 255);
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
         padding: 5px;
         border: inset;
         border-radius: 10px;
+    }
+
+    main h2{
+        display: flex;
+        justify-content: space-around;
+
     }
 
     .estilosTitulos {
