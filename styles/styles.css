@@ -56,8 +56,14 @@ a:active {
     border: inset ;
 }
 
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
 
-/*
 
 .logoPagina {
     width: 10rem;
@@ -65,11 +71,13 @@ a:active {
     padding: 5px;
 }
 
+
+
 .logoPagina1 {
     width: 7rem;
     height: 5rem;
 }
-*/
+
 
 /* Estilo create acount*/
 
