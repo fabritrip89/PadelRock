@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/*proximamente tema navidad o festivos con los imports*/
+/*TAMAÑO CELULAR*/
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgba(12, 88, 138, 0.427);
+  background: linear-gradient(180deg, #a8a8af 0%, rgba(152, 158, 158, 0.630987) 55%, rgba(0, 212, 255, 0.717822) 100%); }
+  body a:link,
+  body a:visited,
+  body a:active {
+    text-decoration: none; }
+
+/*Logos de pagina*/
+.caja1 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 10px;
+  background: #a8a8af;
+  background: radial-gradient(circle, #a8a8af 0%, rgba(152, 158, 158, 0.630987) 55%, rgba(0, 212, 255, 0.717822) 100%);
+  border-radius: 10px; }
+
+/*Estilos titulo*/
+.titulo {
+  text-align: center;
+  size-adjust: auto;
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: bold; }
+
+/*Estilos banner*/
+/*Se aplica SASS acá--------------------------*/
+.caja2 {
+  display: flex;
+  justify-content: space-around; }
+  .caja2 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 1rem;
+    border: inset; }
+
+/*Se aplica SASS acá--------------------------*/
+.zoom {
+  transition: transform .2s; }
+  .zoom:hover {
+    transform: scale(1.5); }
+
+.logoPagina {
+  width: 10rem;
+  height: 5rem;
+  padding: 5px; }
+
+.logoPagina1 {
+  width: 7rem;
+  height: 5rem; }
+
+/* Estilo create acount*/
+.section h2 {
+  text-align: right;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 15px;
+  color: #070766;
+  background: white;
+  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+  padding: 5px;
+  border: inset;
+  border-radius: 10px; }
+
+.section a:hover {
+  text-align: center;
+  transition: 1s;
+  color: red;
+  opacity: 75%;
+  zoom: 125%; }
+
+/* Estilos Navegador*/
+/* Se aplica SASS 
+*/
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-family: 'Tomorrow', sans-serif;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: aliceblue;
+  font-family: 'Tomorrow', sans-serif;
+  border: inset;
+  border-radius: 10px;
+  border-color: #FFFFFF; }
+
+nav li {
+  list-style-type: none;
+  color: #FFFFFF;
+  padding: 10px; }
+
+nav ul ul {
+  position: relative;
+  display: none;
+  display: absolute; }
+
+nav ul ul li {
+  display: flex;
+  width: 7rem;
+  padding: 5px; }
+
+nav ul ul li a {
+  color: white;
+  width: 10rem; }
+
+nav ul li:hover ul {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(12, 88, 138, 0.427);
+  border-radius: 10px; }
+
+/*ESTILO TITULOS*/
+.estilosTitulos {
+  text-align: center;
+  color: #070766;
+  margin: 10px;
+  display: block;
+  font-family: 'Tomorrow', sans-serif;
+  background: white;
+  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+  border: inset;
+  border-radius: 10px; }
+
+/*Prueba con hover animaciones se cambia a color rojo
+Se aplica SASS
+*/
+main h3:hover {
+  text-align: center;
+  transition: 1s;
+  color: red;
+  margin: 10px;
+  display: block;
+  font-family: 'Tomorrow', sans-serif;
+  background: white;
+  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+  border: inset;
+  border-radius: 10px;
+  zoom: 120%; }
+
+main h3 h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+article h1:hover {
+  text-align: center;
+  transition: 1s;
+  color: red;
+  margin: 10px;
+  display: block;
+  font-family: 'Tomorrow', sans-serif;
+  background: white;
+  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+  border: inset;
+  border-radius: 10px;
+  zoom: 120%; }
+
+/*Fin de animaciones colores ROJO*/
+.padelRock {
+  text-align: center;
+  color: #070766;
+  margin: 10px;
+  display: block;
+  font-family: 'Tomorrow', sans-serif;
+  background-color: white; }
+
+.logos_logos {
+  text-align: center; }
+
+/*Paletas posición sobre html palas*/
+.mainCLASEAccesorios {
+  height: 300px;
+  width: 305px;
+  text-align: center;
+  margin-right: 1px;
+  margin-left: 1px;
+  font-family: 'Tomorrow', sans-serif; }
+
+/*filtros de paletas*/
+.fiLTRos {
+  font-family: 'Tomorrow', sans-serif;
+  text-align: left;
+  text-decoration: underline; }
+
+.paDELNox {
+  background-color: #FFFFFF;
+  background-position: 100px;
+  text-align: center; }
+
+.padeLNox {
+  height: 250px;
+  width: 300px;
+  text-align: center; }
+
+/*tabla posición sobre html pala*/
+.tabla1 {
+  border-collapse: separate;
+  font-family: 'Tomorrow', sans-serif;
+  margin: auto; }
+
+.b {
+  border-collapse: collapse; }
+
+tr,
+td,
+th {
+  border: 1px solid #050505; }
+
+.pesoPALeta {
+  font-family: 'Tomorrow', sans-serif;
+  margin: 0, 5rem;
+  font-weight: bold; }
+
+/*estilos de create acount subir imagen o archivo*/
+.pesoPALetaa {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+  padding: 2rem; }
+
+/*estilos IFRAME*/
+.iframeclass {
+  border-radius: 50px;
+  border-color: #0505ac;
+  width: 424 px;
+  height: 238 px;
+  margin-left: auto;
+  margin-right: auto; }
+
+footer {
+  text-align: center;
+  margin: 10px;
+  display: block; }
+
+/*TAMAÑO TABLET */
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header" "section section section" "nav nav nav" "main main main" "article article article" "banner banner banner" "footer footer footer"; }
+  header {
+    grid-area: header; }
+  .estilosTitulos {
+    text-align: center;
+    color: #070766;
+    margin: 10px;
+    display: block;
+    font-family: 'Tomorrow', sans-serif;
+    background: white;
+    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+    border: inset;
+    border-radius: 10px;
+    font-size: 25px; }
+  .section h2 {
+    text-align: right;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 25px;
+    color: #070766;
+    background: white;
+    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+    padding: 5px;
+    border: inset;
+    border-radius: 10px; }
+  .iframeclass {
+    border-radius: 50px;
+    border-color: #0505ac;
+    width: 1000 px;
+    height: 500 px;
+    margin-left: auto;
+    margin-right: auto; }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    font-family: 'Tomorrow', sans-serif;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: aliceblue;
+    font-family: 'Tomorrow', sans-serif;
+    border: inset;
+    border-radius: 10px;
+    border-color: #FFFFFF; }
+  nav li {
+    list-style-type: none;
+    color: #FFFFFF;
+    padding: 10px; }
+  nav ul ul {
+    position: relative;
+    display: none;
+    display: absolute; }
+  nav ul ul li {
+    display: flex;
+    width: 150px;
+    padding: 5px; }
+  nav ul ul li a {
+    color: white; }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(12, 88, 138, 0.427);
+    border-radius: 20px; }
+  .logoPagina {
+    height: 5rem;
+    width: 20rem; }
+  .section {
+    grid-area: section; }
+  nav {
+    grid-area: nav; }
+  main {
+    grid-area: main; }
+  article {
+    grid-area: article; }
+  footer {
+    grid-area: footer; } }
+
+/*/tamaño grande*/
+@media screen and (min-width: 1200px) {
+  body {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header" "section section section section" "nav nav nav nav" "main main main main" "article article article article" "banner banner banner banner" "footer footer footer footer"; }
+  header {
+    grid-area: header; }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+    font-family: 'Tomorrow', sans-serif;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: aliceblue;
+    font-family: 'Tomorrow', sans-serif;
+    border: inset;
+    border-radius: 10px;
+    border-color: #FFFFFF; }
+  nav li {
+    list-style-type: none;
+    color: #FFFFFF;
+    padding: 10px; }
+  nav ul ul {
+    position: relative;
+    display: none;
+    display: absolute; }
+  nav ul ul li {
+    display: block;
+    width: 200px;
+    padding: 5px; }
+  nav ul ul li a {
+    color: white; }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(12, 88, 138, 0.427);
+    border-radius: 10px; }
+  .section h2 {
+    text-align: right;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 25px;
+    color: #070766;
+    background: white;
+    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+    padding: 5px;
+    border: inset;
+    border-radius: 10px; }
+  main h2 {
+    display: flex;
+    justify-content: space-around; }
+  .estilosTitulos {
+    text-align: center;
+    color: #070766;
+    margin: 10px;
+    display: block;
+    font-family: 'Tomorrow', sans-serif;
+    background: white;
+    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+    border: inset;
+    border-radius: 10px;
+    font-size: 35px; }
+  .logoPagina {
+    height: 5rem;
+    width: 30rem; }
+  .logoPagina1 {
+    height: 5rem;
+    width: 7rem; }
+  .iframeclass {
+    border-radius: 50px;
+    border-color: #0505ac;
+    width: 1500 px;
+    height: 1000 px;
+    margin-left: 100px;
+    margin-right: 100px; } }
