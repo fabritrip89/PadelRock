@@ -1,4 +1,5 @@
 @import "header";
+@import "section1";
 @import "section";
 @import "nav";
 @import "main";
@@ -343,6 +344,7 @@ footer {
         grid-template-areas:
 
             "header header header"
+            "section1 section1 section1"
             "section section section"
             "nav nav nav"
             "main main main"
@@ -382,6 +384,18 @@ footer {
             padding: 5px;
             border: inset;
             border-radius: 10px;
+        }
+    }
+
+    .section1{
+        text-align: center;
+        p{
+            display: block;
+            flex-direction: row;
+            padding: 5px;
+            align-items: center;
+            text-align: center;
+            font-family: 'Tomorrow', sans-serif;
         }
     }
 
@@ -476,6 +490,7 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "header header header header"
+            "section1 section1 section1 section1"
             "section section section section"
             "nav nav nav nav"
             "main main main main"

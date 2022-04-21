@@ -243,7 +243,7 @@ footer {
 @media screen and (min-width: 768px) {
   body {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header" "section section section" "nav nav nav" "main main main" "article article article" "banner banner banner" "footer footer footer"; }
+    grid-template-areas: "header header header" "section1 section1 section1" "section section section" "nav nav nav" "main main main" "article article article" "banner banner banner" "footer footer footer"; }
   header {
     grid-area: header; }
   .estilosTitulos {
@@ -267,6 +267,15 @@ footer {
     padding: 5px;
     border: inset;
     border-radius: 10px; }
+  .section1 {
+    text-align: center; }
+    .section1 p {
+      display: block;
+      flex-direction: row;
+      padding: 5px;
+      align-items: center;
+      text-align: center;
+      font-family: 'Tomorrow', sans-serif; }
   .iframeclass {
     border-radius: 50px;
     border-color: #0505ac;
@@ -325,7 +334,7 @@ footer {
 @media screen and (min-width: 1200px) {
   body {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "header header header header" "section section section section" "nav nav nav nav" "main main main main" "article article article article" "banner banner banner banner" "footer footer footer footer"; }
+    grid-template-areas: "header header header header" "section1 section1 section1 section1" "section section section section" "nav nav nav nav" "main main main main" "article article article article" "banner banner banner banner" "footer footer footer footer"; }
   header {
     grid-area: header; }
   nav ul {
