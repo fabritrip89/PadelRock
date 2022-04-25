@@ -12,7 +12,7 @@ body {
     text-decoration: none; }
 
 /*Logos de pagina*/
-.caja1 {
+header {
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -20,42 +20,32 @@ body {
   background: #a8a8af;
   background: radial-gradient(circle, #a8a8af 0%, rgba(152, 158, 158, 0.630987) 55%, rgba(0, 212, 255, 0.717822) 100%);
   border-radius: 10px; }
-
-/*Estilos titulo*/
-.titulo {
-  text-align: center;
-  size-adjust: auto;
-  font-family: 'Tomorrow', sans-serif;
-  font-weight: bold; }
-
-/*Estilos banner*/
-/*Se aplica SASS acá--------------------------*/
-.caja2 {
-  display: flex;
-  justify-content: space-around; }
-  .caja2 img {
-    width: 50px;
-    height: 50px;
-    border-radius: 1rem;
-    border: inset; }
-
-/*Se aplica SASS acá--------------------------*/
-.zoom {
-  transition: transform .2s; }
-  .zoom:hover {
-    transform: scale(1.5); }
-
-.logoPagina {
-  width: 10rem;
-  height: 5rem;
-  padding: 5px; }
-
-.logoPagina1 {
-  width: 7rem;
-  height: 5rem; }
+  header img {
+    width: 10rem;
+    height: 5rem;
+    padding: 5px; }
+  header img {
+    width: 7rem;
+    height: 5rem; }
 
 /* Estilo create acount*/
-.section h2 {
+aside {
+  display: flex;
+  justify-content: center;
+  font-family: 'Tomorrow', sans-serif;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: aliceblue;
+  border: inset;
+  border-radius: 10px;
+  border-color: #FFFFFF;
+  font-size: 1.05rem;
+  font-style: bold; }
+  aside p {
+    text-decoration: underline; }
+
+.section p {
   text-align: right;
   font-family: 'Tomorrow', sans-serif;
   font-size: 15px;
@@ -68,14 +58,12 @@ body {
 
 .section a:hover {
   text-align: center;
-  transition: 1s;
-  color: red;
-  opacity: 75%;
-  zoom: 125%; }
+  transition: 0.5s;
+  color: black;
+  opacity: 95%;
+  text-decoration: bold; }
 
 /* Estilos Navegador*/
-/* Se aplica SASS 
-*/
 nav ul {
   list-style-type: none;
   display: flex;
@@ -115,8 +103,10 @@ nav ul li:hover ul {
   background-color: rgba(12, 88, 138, 0.427);
   border-radius: 10px; }
 
-/*ESTILO TITULOS*/
-.estilosTitulos {
+/*Prueba con hover animaciones se cambia a color rojo
+Se aplica SASS
+*/
+main p {
   text-align: center;
   color: #070766;
   margin: 10px;
@@ -126,41 +116,90 @@ nav ul li:hover ul {
   background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
   border: inset;
   border-radius: 10px; }
+  main p:hover {
+    transition: 0.5s;
+    color: blue; }
 
-/*Prueba con hover animaciones se cambia a color rojo
-Se aplica SASS
-*/
-main h3:hover {
-  text-align: center;
-  transition: 1s;
-  color: red;
-  margin: 10px;
-  display: block;
-  font-family: 'Tomorrow', sans-serif;
-  background: white;
-  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-  border: inset;
-  border-radius: 10px;
-  zoom: 120%; }
-
-main h3 h2 {
+main .iframeclass {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  border-radius: 50px;
+  border-color: #0505ac;
+  width: 1000 px;
+  height: 500 px;
+  margin-left: auto;
+  margin-right: auto; }
 
-article h1:hover {
+article p {
   text-align: center;
-  transition: 1s;
-  color: red;
+  color: #070766;
   margin: 10px;
   display: block;
   font-family: 'Tomorrow', sans-serif;
   background: white;
   background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
   border: inset;
-  border-radius: 10px;
-  zoom: 120%; }
+  border-radius: 10px; }
+  article p:hover {
+    transition: 0.5s;
+    color: blue; }
 
+article .iframeclass {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  border-color: #0505ac;
+  width: 1000 px;
+  height: 500 px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*Estilos banner-----------------------------------------------------------*/
+banner p {
+  text-align: center;
+  color: #070766;
+  margin: 10px;
+  display: block;
+  font-family: 'Tomorrow', sans-serif;
+  background: white;
+  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+  border: inset;
+  border-radius: 10px; }
+  banner p:hover {
+    transition: 0.5s;
+    color: blue; }
+
+banner .caja2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  padding: 0.5rem; }
+  banner .caja2 img {
+    width: 35px;
+    height: 40px;
+    border-radius: 0.5rem;
+    border: inset; }
+  banner .caja2 p1 {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 0.65rem; }
+
+/*CORREGIRRRRRRRRRRRRRRRRRRRR*/
+footer p {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 10px;
+  background: #a8a8af;
+  background: radial-gradient(circle, #a8a8af 0%, rgba(152, 158, 158, 0.630987) 55%, rgba(0, 212, 255, 0.717822) 100%);
+  border-radius: 10px; }
+
+footer:hover {
+  transition: 0.5s;
+  color: blue; }
+
+/*CORREGIRRRRRRRRRRRRRRRRRRRR*/
 /*Fin de animaciones colores ROJO*/
 .padelRock {
   text-align: center;
@@ -225,25 +264,11 @@ th {
   padding-top: 1rem;
   padding: 2rem; }
 
-/*estilos IFRAME*/
-.iframeclass {
-  border-radius: 50px;
-  border-color: #0505ac;
-  width: 424 px;
-  height: 238 px;
-  margin-left: auto;
-  margin-right: auto; }
-
-footer {
-  text-align: center;
-  margin: 10px;
-  display: block; }
-
 /*TAMAÑO TABLET */
 @media screen and (min-width: 768px) {
   body {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header" "section1 section1 section1" "section section section" "nav nav nav" "main main main" "article article article" "banner banner banner" "footer footer footer"; }
+    grid-template-areas: "header header header" "section section section" "nav nav nav" "aside aside aside" "main main main" "article article article" "banner banner banner" "footer footer footer"; }
   header {
     grid-area: header; }
   .estilosTitulos {
@@ -257,7 +282,7 @@ footer {
     border: inset;
     border-radius: 10px;
     font-size: 25px; }
-  .section h2 {
+  .section p {
     text-align: right;
     font-family: 'Tomorrow', sans-serif;
     font-size: 25px;
@@ -267,15 +292,6 @@ footer {
     padding: 5px;
     border: inset;
     border-radius: 10px; }
-  .section1 {
-    text-align: center; }
-    .section1 p {
-      display: block;
-      flex-direction: row;
-      padding: 5px;
-      align-items: center;
-      text-align: center;
-      font-family: 'Tomorrow', sans-serif; }
   .iframeclass {
     border-radius: 50px;
     border-color: #0505ac;
@@ -316,6 +332,21 @@ footer {
     flex-direction: column;
     background-color: rgba(12, 88, 138, 0.427);
     border-radius: 20px; }
+  aside {
+    display: flex;
+    justify-content: center;
+    font-family: 'Tomorrow', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: aliceblue;
+    border: inset;
+    border-radius: 10px;
+    border-color: #FFFFFF;
+    font-size: 1.5rem;
+    font-style: bold; }
+    aside p1 {
+      text-decoration: underline; }
   .logoPagina {
     height: 5rem;
     width: 20rem; }
@@ -323,10 +354,14 @@ footer {
     grid-area: section; }
   nav {
     grid-area: nav; }
+  aside {
+    grid-area: aside; }
   main {
     grid-area: main; }
   article {
     grid-area: article; }
+  banner {
+    grid-area: banner; }
   footer {
     grid-area: footer; } }
 
@@ -334,7 +369,7 @@ footer {
 @media screen and (min-width: 1200px) {
   body {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "header header header header" "section1 section1 section1 section1" "section section section section" "nav nav nav nav" "main main main main" "article article article article" "banner banner banner banner" "footer footer footer footer"; }
+    grid-template-areas: "header header header header" "section section section section" "nav nav nav nav" "aside aside aside aside" "main main main main" "article article article article" "banner banner banner banner" "footer footer footer footer"; }
   header {
     grid-area: header; }
   nav ul {
@@ -343,7 +378,7 @@ footer {
     padding: 5px;
     font-family: 'Tomorrow', sans-serif;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     background-color: aliceblue;
     font-family: 'Tomorrow', sans-serif;
     border: inset;
@@ -368,17 +403,17 @@ footer {
     flex-direction: column;
     background-color: rgba(12, 88, 138, 0.427);
     border-radius: 10px; }
-  .section h2 {
+  .section p {
     text-align: right;
     font-family: 'Tomorrow', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #070766;
     background: white;
     background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
     padding: 5px;
     border: inset;
     border-radius: 10px; }
-  main h2 {
+  main p {
     display: flex;
     justify-content: space-around; }
   .estilosTitulos {
@@ -394,14 +429,28 @@ footer {
     font-size: 35px; }
   .logoPagina {
     height: 5rem;
-    width: 30rem; }
+    width: 20rem; }
   .logoPagina1 {
     height: 5rem;
     width: 7rem; }
   .iframeclass {
-    border-radius: 50px;
+    border-radius: 30px;
     border-color: #0505ac;
     width: 1500 px;
     height: 1000 px;
     margin-left: 100px;
-    margin-right: 100px; } }
+    margin-right: 100px; }
+  .section {
+    grid-area: section; }
+  nav {
+    grid-area: nav; }
+  aside {
+    grid-area: aside; }
+  main {
+    grid-area: main; }
+  article {
+    grid-area: article; }
+  banner {
+    grid-area: banner; }
+  footer {
+    grid-area: footer; } }
