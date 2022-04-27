@@ -72,11 +72,11 @@ aside {
 
 }
 
-.section {
+section {
     p {
         text-align: right;
         font-family: 'Tomorrow', sans-serif;
-        font-size: 15px;
+        font-size: 1.05rem;
         color: rgb(7, 7, 102);
         background: rgb(255, 255, 255);
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
@@ -97,7 +97,7 @@ aside {
     }
 }
 
-/* Estilos Navegador*/
+/* Estilos Navegador VIEJO
 
 nav {
     ul {
@@ -149,9 +149,14 @@ nav {
     }
 }
 
-/*Prueba con hover animaciones se cambia a color rojo
-Se aplica SASS
 */
+
+nav {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 1.05rem;
+
+}
+
 main {
     p {
         text-align: center;
@@ -163,26 +168,25 @@ main {
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
         border: inset;
         border-radius: 10px;
+        font-size: 1.05rem;
 
         &:hover {
             transition: 0.5s;
             color: blue;
 
         }
-
     }
 
-    .iframeclass {
+    iframe {
         display: flex;
         justify-content: center;
-        border-radius: 50px;
+        border-radius: 2rem;
         border-color: rgb(5, 5, 172);
-        width: 1000 px;
-        height: 500 px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        width: 22rem;
+        height: 9rem;
+        margin: auto;
 
+    }
 }
 
 
@@ -200,24 +204,23 @@ article {
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
         border: inset;
         border-radius: 10px;
+        font-size: 1.05rem;
 
         &:hover {
             transition: 0.5s;
             color: blue;
-
         }
 
     }
 
-    .iframeclass {
+    iframe {
         display: flex;
         justify-content: center;
-        border-radius: 50px;
+        border-radius: 2rem;
         border-color: rgb(5, 5, 172);
-        width: 1000 px;
-        height: 500 px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 22rem;
+        height: 9rem;
+        margin: auto;
 
     }
 }
@@ -226,8 +229,6 @@ article {
 /*Estilos banner-----------------------------------------------------------*/
 banner {
     p {
-
-
 
         text-align: center;
         color: rgb(7, 7, 102);
@@ -238,6 +239,7 @@ banner {
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
         border: inset;
         border-radius: 10px;
+        font-size: 1.05rem;
 
         &:hover {
             transition: 0.5s;
@@ -251,40 +253,59 @@ banner {
     .caja2 {
         display: flex;
         justify-content: space-evenly;
-        margin: 1rem;
+        margin: 0.5rem;
         padding: 0.5rem;
 
         img {
-            width: 35px;
-            height: 40px;
+            width: 3rem;
+            height: 3rem;
             border-radius: 0.5rem;
             border: inset;
         }
+    }
 
-        p1 {
-            font-family: 'Tomorrow', sans-serif;
-            font-size: 0.5rem;
-            text-align: center;
-            padding: 0.65rem;
+    p1 {
+        font-family: 'Tomorrow', sans-serif;
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 0.2rem;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+footer {
+
+    .caja2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+        padding: 0.5rem;
+
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.2rem;
+            border: inset;
+            box-shadow: #FFFFFF;
+
         }
     }
 
-}
-
-
-/*CORREGIRRRRRRRRRRRRRRRRRRRR*/
-footer {
     p {
 
         display: flex;
         justify-content: center;
+        text-align: center;
         padding: 5px;
         border: 10px;
         background: rgb(168, 168, 175);
         background: radial-gradient(circle, rgba(168, 168, 175, 1) 0%, rgba(152, 158, 158, 0.630987429151348) 55%, rgba(0, 212, 255, 0.7178221630449055) 100%);
         border-radius: 10px;
+        font-size: 1.05rem;
 
-    
     }
 
 
@@ -292,23 +313,9 @@ footer {
 
         transition: 0.5s;
         color: blue;
+
     }
 }
-
-
-
-/*CORREGIRRRRRRRRRRRRRRRRRRRR*/
-
-
-
-
-
-
-
-
-
-
-/*Fin de animaciones colores ROJO*/
 
 .padelRock {
     text-align: center;
@@ -318,9 +325,6 @@ footer {
     font-family: 'Tomorrow', sans-serif;
     background-color: rgb(255, 255, 255);
 }
-
-
-
 
 .logos_logos {
     text-align: center;
@@ -393,9 +397,7 @@ th {
 }
 
 
-
-
-/*TAMAÑO TABLET */
+/*TAMAÑO TABLET------------------------------------------- */
 
 
 @media screen and (min-width:768px) {
@@ -417,46 +419,38 @@ th {
     header {
         grid-area: header;
 
+        img {
+            width: 10rem;
+            height: 8rem;
+            padding: 5px;
+        }
+
     }
 
-    .estilosTitulos {
-        text-align: center;
-        color: rgb(7, 7, 102);
-        margin: 10px;
-        display: block;
-        font-family: 'Tomorrow', sans-serif;
-        background: rgb(255, 255, 255);
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
-        border: inset;
-        border-radius: 10px;
-        font-size: 25px;
-    }
 
-    .section {
+    section {
+
+        grid-area: section;
+
+
 
         p {
             text-align: right;
-            font-family: 'Tomorrow', sans-serif;
-            font-size: 25px;
             color: rgb(7, 7, 102);
+            margin: 10px;
+            display: block;
+            font-family: 'Tomorrow', sans-serif;
             background: rgb(255, 255, 255);
             background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
-            padding: 5px;
             border: inset;
             border-radius: 10px;
+            font-size: 1.25rem;
         }
     }
 
 
-    .iframeclass {
-        border-radius: 50px;
-        border-color: rgb(5, 5, 172);
-        width: 1000 px;
-        height: 500 px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
+    /*   navegador viejo
     nav {
         ul {
             list-style-type: none;
@@ -466,12 +460,12 @@ th {
             padding: 5px;
             font-family: 'Tomorrow', sans-serif;
             cursor: pointer;
-            font-size: 25px;
             background-color: aliceblue;
             font-family: 'Tomorrow', sans-serif;
             border: inset;
             border-radius: 10px;
             border-color: #FFFFFF;
+            font-size: 1.25rem;
         }
 
         li {
@@ -504,7 +498,17 @@ th {
         }
     }
 
+    */
+
+    nav {
+        grid-area: nav;
+        font-size: 1.25rem;
+        font-family: 'Tomorrow', sans-serif;
+    }
+
+
     aside {
+        grid-area: aside;
         display: flex;
         justify-content: center;
         font-family: 'Tomorrow', sans-serif;
@@ -515,7 +519,7 @@ th {
         border: inset;
         border-radius: 10px;
         border-color: #FFFFFF;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-style: bold;
 
         p1 {
@@ -525,45 +529,124 @@ th {
 
     }
 
+    main {
+        grid-area: main;
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        iframe {
+            display: flex;
+            justify-content: center;
+            border-radius: 2rem;
+            border-color: rgb(5, 5, 172);
+            width: 46rem;
+            height: 10rem;
+            margin: auto;
+        }
+
+    }
+
+    article {
+
+        grid-area: article;
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        iframe {
+            display: flex;
+            justify-content: center;
+            border-radius: 2rem;
+            border-color: rgb(5, 5, 172);
+            width: 46rem;
+            height: 10rem;
+            margin: auto;
+
+        }
+    }
+
+    banner {
+        grid-area: banner;
+
+        p {
+            font-size: 1.25rem;
+        }
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            border: inset;
+        }
+
+
+        p1 {
+            font-family: 'Tomorrow', sans-serif;
+            font-size: 1.20rem;
+            text-align: center;
+            padding: 0.3rem;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+    }
+
+    footer {
+        grid-area: footer;
+
+        .caja2 {
+
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0.5rem;
+            padding: 0.5rem;
+
+            img {
+                width: 3rem;
+                height: 2.5rem;
+                border-radius: 0.5rem;
+                border: inset;
+                box-shadow: #FFFFFF;
+
+            }
+        }
+
+        p {
+            font-size: 1.25rem;
+        }
+    }
+
+    /*VERRRRRRRRRRRRRRRRRRRARRIBAAAAA*/
+
+    .estilosTitulos {
+        text-align: center;
+        color: rgb(7, 7, 102);
+        margin: 10px;
+        display: block;
+        font-family: 'Tomorrow', sans-serif;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+        border: inset;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+
+
+
     .logoPagina {
         height: 5rem;
         width: 20rem;
     }
 
-    .section {
-        grid-area: section;
-    }
-
-    nav {
-        grid-area: nav;
-
-    }
-
-    aside {
-        grid-area: aside;
-    }
-
-    main {
-        grid-area: main;
-    }
-
-    article {
-        grid-area: article;
-    }
-
-    banner {
-        grid-area: banner;
-    }
-
-    footer {
-        grid-area: footer;
-    }
 
 }
 
-/*/tamaño grande*/
+/*/tamaño grande-----------------------------------------------------*/
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
     body {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
@@ -579,8 +662,42 @@ th {
 
     header {
         grid-area: header;
+
+        img {
+            width: 11rem;
+            height: 8.5rem;
+            padding: 5px;
+        }
     }
 
+    section {
+        grid-area: section;
+
+        p {
+            text-align: right;
+            color: rgb(7, 7, 102);
+            margin: 10px;
+            display: block;
+            font-family: 'Tomorrow', sans-serif;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+            border: inset;
+            border-radius: 10px;
+            font-size: 1.7rem;
+        }
+    }
+
+    nav {
+        grid-area: nav;
+        font-size: 1.7rem;
+    }
+
+    aside {
+        grid-area: aside;
+        font-size: 1.7rem;
+    }
+
+    /*NAV VIEJO
     nav {
         ul {
             list-style-type: none;
@@ -625,28 +742,74 @@ th {
             border-radius: 10px;
         }
     }
-
-    .section {
-        p {
-            text-align: right;
-            font-family: 'Tomorrow', sans-serif;
-            font-size: 20px;
-            color: rgb(7, 7, 102);
-            background: rgb(255, 255, 255);
-            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
-            padding: 5px;
-            border: inset;
-            border-radius: 10px;
-        }
-    }
+    */
 
     main {
+        grid-area: main;
+
         p {
             display: flex;
             justify-content: space-around;
+            font-size: 1.7rem;
+        }
+
+        iframe {
+            display: flex;
+            justify-content: center;
+            border-radius: 2rem;
+            border-color: rgb(5, 5, 172);
+            width: 70rem;
+            height: 15rem;
+            margin: auto;
+
         }
     }
 
+    article {
+        grid-area: 1.7rem;
+
+        p {
+            font-size: 1.7rem;
+        }
+
+        iframe {
+            display: flex;
+            justify-content: center;
+            border-radius: 2rem;
+            border-color: rgb(5, 5, 172);
+            width: 70rem;
+            height: 15rem;
+            margin: auto;
+
+        }
+    }
+
+    banner {
+        grid-area: banner;
+
+        p {
+            font-size: 1.7rem;
+        }
+
+        p1 {
+
+            font-size: 1.6rem;
+
+
+        }
+
+    }
+
+
+    footer {
+        grid-area: footer;
+
+        p {
+            font-size: 1.7rem;
+        }
+    }
+
+    /*
     .estilosTitulos {
         text-align: center;
         color: rgb(7, 7, 102);
@@ -659,6 +822,7 @@ th {
         border-radius: 10px;
         font-size: 35px;
     }
+    */
 
     .logoPagina {
         height: 5rem;
@@ -677,35 +841,6 @@ th {
         height: 1000 px;
         margin-left: 100px;
         margin-right: 100px;
-    }
-
-    .section {
-        grid-area: section;
-    }
-
-    nav {
-        grid-area: nav;
-
-    }
-
-    aside {
-        grid-area: aside;
-    }
-
-    main {
-        grid-area: main;
-    }
-
-    article {
-        grid-area: article;
-    }
-
-    banner {
-        grid-area: banner;
-    }
-
-    footer {
-        grid-area: footer;
     }
 
 }

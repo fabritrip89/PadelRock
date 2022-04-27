@@ -45,10 +45,10 @@ aside {
   aside p {
     text-decoration: underline; }
 
-.section p {
+section p {
   text-align: right;
   font-family: 'Tomorrow', sans-serif;
-  font-size: 15px;
+  font-size: 1.05rem;
   color: #070766;
   background: white;
   background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
@@ -56,56 +56,70 @@ aside {
   border: inset;
   border-radius: 10px; }
 
-.section a:hover {
+section a:hover {
   text-align: center;
   transition: 0.5s;
   color: black;
   opacity: 95%;
   text-decoration: bold; }
 
-/* Estilos Navegador*/
-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  font-family: 'Tomorrow', sans-serif;
-  cursor: pointer;
-  font-size: 15px;
-  background-color: aliceblue;
-  font-family: 'Tomorrow', sans-serif;
-  border: inset;
-  border-radius: 10px;
-  border-color: #FFFFFF; }
+/* Estilos Navegador VIEJO
 
-nav li {
-  list-style-type: none;
-  color: #FFFFFF;
-  padding: 10px; }
+nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        font-family: 'Tomorrow', sans-serif;
+        cursor: pointer;
+        font-size: 15px;
+        background-color: aliceblue;
+        font-family: 'Tomorrow', sans-serif;
+        border: inset;
+        border-radius: 10px;
+        border-color: #FFFFFF;
+    }
 
-nav ul ul {
-  position: relative;
-  display: none;
-  display: absolute; }
+    li {
+        list-style-type: none;
+        color: #FFFFFF;
+        padding: 10px;
+    }
 
-nav ul ul li {
-  display: flex;
-  width: 7rem;
-  padding: 5px; }
+    ul ul {
+        position: relative;
+        display: none;
+        display: absolute;
+    }
 
-nav ul ul li a {
-  color: white;
-  width: 10rem; }
+    ul ul li {
+        display: flex;
+        width: 7rem;
+        padding: 5px;
+    }
 
-nav ul li:hover ul {
-  display: flex;
-  justify-content: flex-start;
-  background-color: rgba(12, 88, 138, 0.427);
-  border-radius: 10px; }
+    ul ul li a {
+        color: white;
+        width: 10rem;
 
-/*Prueba con hover animaciones se cambia a color rojo
-Se aplica SASS
+    }
+
+    ul {
+        li:hover ul {
+            display: flex;
+            justify-content: flex-start;
+            background-color: rgba(12, 88, 138, 0.427);
+            border-radius: 10px;
+        }
+    }
+}
+
 */
+nav {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 1.05rem; }
+
 main p {
   text-align: center;
   color: #070766;
@@ -115,20 +129,20 @@ main p {
   background: white;
   background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
   border: inset;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-size: 1.05rem; }
   main p:hover {
     transition: 0.5s;
     color: blue; }
 
-main .iframeclass {
+main iframe {
   display: flex;
   justify-content: center;
-  border-radius: 50px;
+  border-radius: 2rem;
   border-color: #0505ac;
-  width: 1000 px;
-  height: 500 px;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 22rem;
+  height: 9rem;
+  margin: auto; }
 
 article p {
   text-align: center;
@@ -139,20 +153,20 @@ article p {
   background: white;
   background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
   border: inset;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-size: 1.05rem; }
   article p:hover {
     transition: 0.5s;
     color: blue; }
 
-article .iframeclass {
+article iframe {
   display: flex;
   justify-content: center;
-  border-radius: 50px;
+  border-radius: 2rem;
   border-color: #0505ac;
-  width: 1000 px;
-  height: 500 px;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 22rem;
+  height: 9rem;
+  margin: auto; }
 
 /*Estilos banner-----------------------------------------------------------*/
 banner p {
@@ -164,7 +178,8 @@ banner p {
   background: white;
   background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
   border: inset;
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-size: 1.05rem; }
   banner p:hover {
     transition: 0.5s;
     color: blue; }
@@ -172,35 +187,49 @@ banner p {
 banner .caja2 {
   display: flex;
   justify-content: space-evenly;
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 0.5rem; }
   banner .caja2 img {
-    width: 35px;
-    height: 40px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 0.5rem;
     border: inset; }
-  banner .caja2 p1 {
-    font-family: 'Tomorrow', sans-serif;
-    font-size: 0.5rem;
-    text-align: center;
-    padding: 0.65rem; }
 
-/*CORREGIRRRRRRRRRRRRRRRRRRRR*/
+banner p1 {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.2rem;
+  display: flex;
+  flex-wrap: wrap; }
+
+footer .caja2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  padding: 0.5rem; }
+  footer .caja2 img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    border: inset;
+    box-shadow: #FFFFFF; }
+
 footer p {
   display: flex;
   justify-content: center;
+  text-align: center;
   padding: 5px;
   border: 10px;
   background: #a8a8af;
   background: radial-gradient(circle, #a8a8af 0%, rgba(152, 158, 158, 0.630987) 55%, rgba(0, 212, 255, 0.717822) 100%);
-  border-radius: 10px; }
+  border-radius: 10px;
+  font-size: 1.05rem; }
 
 footer:hover {
   transition: 0.5s;
   color: blue; }
 
-/*CORREGIRRRRRRRRRRRRRRRRRRRR*/
-/*Fin de animaciones colores ROJO*/
 .padelRock {
   text-align: center;
   color: #070766;
@@ -264,13 +293,155 @@ th {
   padding-top: 1rem;
   padding: 2rem; }
 
-/*TAMAÑO TABLET */
+/*TAMAÑO TABLET------------------------------------------- */
 @media screen and (min-width: 768px) {
   body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header" "section section section" "nav nav nav" "aside aside aside" "main main main" "article article article" "banner banner banner" "footer footer footer"; }
   header {
     grid-area: header; }
+    header img {
+      width: 10rem;
+      height: 8rem;
+      padding: 5px; }
+  section {
+    grid-area: section; }
+    section p {
+      text-align: right;
+      color: #070766;
+      margin: 10px;
+      display: block;
+      font-family: 'Tomorrow', sans-serif;
+      background: white;
+      background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+      border: inset;
+      border-radius: 10px;
+      font-size: 1.25rem; }
+  /*   navegador viejo
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px;
+            font-family: 'Tomorrow', sans-serif;
+            cursor: pointer;
+            background-color: aliceblue;
+            font-family: 'Tomorrow', sans-serif;
+            border: inset;
+            border-radius: 10px;
+            border-color: #FFFFFF;
+            font-size: 1.25rem;
+        }
+
+        li {
+            list-style-type: none;
+            color: #FFFFFF;
+            padding: 10px;
+        }
+
+        ul ul {
+            position: relative;
+            display: none;
+            display: absolute;
+        }
+
+        ul ul li {
+            display: flex;
+            width: 150px;
+            padding: 5px;
+        }
+
+        ul ul li a {
+            color: white;
+        }
+
+        ul li:hover ul {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(12, 88, 138, 0.427);
+            border-radius: 20px;
+        }
+    }
+
+    */
+  nav {
+    grid-area: nav;
+    font-size: 1.25rem;
+    font-family: 'Tomorrow', sans-serif; }
+  aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    font-family: 'Tomorrow', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: aliceblue;
+    border: inset;
+    border-radius: 10px;
+    border-color: #FFFFFF;
+    font-size: 1.25rem;
+    font-style: bold; }
+    aside p1 {
+      text-decoration: underline; }
+  main {
+    grid-area: main; }
+    main p {
+      font-size: 1.25rem; }
+    main iframe {
+      display: flex;
+      justify-content: center;
+      border-radius: 2rem;
+      border-color: #0505ac;
+      width: 46rem;
+      height: 10rem;
+      margin: auto; }
+  article {
+    grid-area: article; }
+    article p {
+      font-size: 1.25rem; }
+    article iframe {
+      display: flex;
+      justify-content: center;
+      border-radius: 2rem;
+      border-color: #0505ac;
+      width: 46rem;
+      height: 10rem;
+      margin: auto; }
+  banner {
+    grid-area: banner; }
+    banner p {
+      font-size: 1.25rem; }
+    banner img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      border: inset; }
+    banner p1 {
+      font-family: 'Tomorrow', sans-serif;
+      font-size: 1.20rem;
+      text-align: center;
+      padding: 0.3rem;
+      display: flex;
+      flex-wrap: wrap; }
+  footer {
+    grid-area: footer; }
+    footer .caja2 {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0.5rem;
+      padding: 0.5rem; }
+      footer .caja2 img {
+        width: 3rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        border: inset;
+        box-shadow: #FFFFFF; }
+    footer p {
+      font-size: 1.25rem; }
+  /*VERRRRRRRRRRRRRRRRRRRARRIBAAAAA*/
   .estilosTitulos {
     text-align: center;
     color: #070766;
@@ -282,151 +453,136 @@ th {
     border: inset;
     border-radius: 10px;
     font-size: 25px; }
-  .section p {
-    text-align: right;
-    font-family: 'Tomorrow', sans-serif;
-    font-size: 25px;
-    color: #070766;
-    background: white;
-    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-    padding: 5px;
-    border: inset;
-    border-radius: 10px; }
-  .iframeclass {
-    border-radius: 50px;
-    border-color: #0505ac;
-    width: 1000 px;
-    height: 500 px;
-    margin-left: auto;
-    margin-right: auto; }
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5px;
-    font-family: 'Tomorrow', sans-serif;
-    cursor: pointer;
-    font-size: 25px;
-    background-color: aliceblue;
-    font-family: 'Tomorrow', sans-serif;
-    border: inset;
-    border-radius: 10px;
-    border-color: #FFFFFF; }
-  nav li {
-    list-style-type: none;
-    color: #FFFFFF;
-    padding: 10px; }
-  nav ul ul {
-    position: relative;
-    display: none;
-    display: absolute; }
-  nav ul ul li {
-    display: flex;
-    width: 150px;
-    padding: 5px; }
-  nav ul ul li a {
-    color: white; }
-  nav ul li:hover ul {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(12, 88, 138, 0.427);
-    border-radius: 20px; }
-  aside {
-    display: flex;
-    justify-content: center;
-    font-family: 'Tomorrow', sans-serif;
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: aliceblue;
-    border: inset;
-    border-radius: 10px;
-    border-color: #FFFFFF;
-    font-size: 1.5rem;
-    font-style: bold; }
-    aside p1 {
-      text-decoration: underline; }
   .logoPagina {
     height: 5rem;
-    width: 20rem; }
-  .section {
-    grid-area: section; }
-  nav {
-    grid-area: nav; }
-  aside {
-    grid-area: aside; }
-  main {
-    grid-area: main; }
-  article {
-    grid-area: article; }
-  banner {
-    grid-area: banner; }
-  footer {
-    grid-area: footer; } }
+    width: 20rem; } }
 
-/*/tamaño grande*/
-@media screen and (min-width: 1200px) {
+/*/tamaño grande-----------------------------------------------------*/
+@media screen and (min-width: 1280px) {
   body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "header header header header" "section section section section" "nav nav nav nav" "aside aside aside aside" "main main main main" "article article article article" "banner banner banner banner" "footer footer footer footer"; }
   header {
     grid-area: header; }
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    padding: 5px;
-    font-family: 'Tomorrow', sans-serif;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: aliceblue;
-    font-family: 'Tomorrow', sans-serif;
-    border: inset;
-    border-radius: 10px;
-    border-color: #FFFFFF; }
-  nav li {
-    list-style-type: none;
-    color: #FFFFFF;
-    padding: 10px; }
-  nav ul ul {
-    position: relative;
-    display: none;
-    display: absolute; }
-  nav ul ul li {
-    display: block;
-    width: 200px;
-    padding: 5px; }
-  nav ul ul li a {
-    color: white; }
-  nav ul li:hover ul {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(12, 88, 138, 0.427);
-    border-radius: 10px; }
-  .section p {
-    text-align: right;
-    font-family: 'Tomorrow', sans-serif;
-    font-size: 20px;
-    color: #070766;
-    background: white;
-    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-    padding: 5px;
-    border: inset;
-    border-radius: 10px; }
-  main p {
-    display: flex;
-    justify-content: space-around; }
-  .estilosTitulos {
-    text-align: center;
-    color: #070766;
-    margin: 10px;
-    display: block;
-    font-family: 'Tomorrow', sans-serif;
-    background: white;
-    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-    border: inset;
-    border-radius: 10px;
-    font-size: 35px; }
+    header img {
+      width: 11rem;
+      height: 8.5rem;
+      padding: 5px; }
+  section {
+    grid-area: section; }
+    section p {
+      text-align: right;
+      color: #070766;
+      margin: 10px;
+      display: block;
+      font-family: 'Tomorrow', sans-serif;
+      background: white;
+      background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+      border: inset;
+      border-radius: 10px;
+      font-size: 1.7rem; }
+  nav {
+    grid-area: nav;
+    font-size: 1.7rem; }
+  aside {
+    grid-area: aside;
+    font-size: 1.7rem; }
+  /*NAV VIEJO
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding: 5px;
+            font-family: 'Tomorrow', sans-serif;
+            cursor: pointer;
+            font-size: 20px;
+            background-color: aliceblue;
+            font-family: 'Tomorrow', sans-serif;
+            border: inset;
+            border-radius: 10px;
+            border-color: #FFFFFF;
+        }
+
+        li {
+            list-style-type: none;
+            color: #FFFFFF;
+            padding: 10px;
+        }
+
+        ul ul {
+            position: relative;
+            display: none;
+            display: absolute;
+        }
+
+        ul ul li {
+            display: block;
+            width: 200px;
+            padding: 5px;
+        }
+
+        ul ul li a {
+            color: white;
+        }
+
+        ul li:hover ul {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(12, 88, 138, 0.427);
+            border-radius: 10px;
+        }
+    }
+    */
+  main {
+    grid-area: main; }
+    main p {
+      display: flex;
+      justify-content: space-around;
+      font-size: 1.7rem; }
+    main iframe {
+      display: flex;
+      justify-content: center;
+      border-radius: 2rem;
+      border-color: #0505ac;
+      width: 70rem;
+      height: 15rem;
+      margin: auto; }
+  article {
+    grid-area: 1.7rem; }
+    article p {
+      font-size: 1.7rem; }
+    article iframe {
+      display: flex;
+      justify-content: center;
+      border-radius: 2rem;
+      border-color: #0505ac;
+      width: 70rem;
+      height: 15rem;
+      margin: auto; }
+  banner {
+    grid-area: banner; }
+    banner p {
+      font-size: 1.7rem; }
+    banner p1 {
+      font-size: 1.6rem; }
+  footer {
+    grid-area: footer; }
+    footer p {
+      font-size: 1.7rem; }
+  /*
+    .estilosTitulos {
+        text-align: center;
+        color: rgb(7, 7, 102);
+        margin: 10px;
+        display: block;
+        font-family: 'Tomorrow', sans-serif;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+        border: inset;
+        border-radius: 10px;
+        font-size: 35px;
+    }
+    */
   .logoPagina {
     height: 5rem;
     width: 20rem; }
@@ -439,18 +595,4 @@ th {
     width: 1500 px;
     height: 1000 px;
     margin-left: 100px;
-    margin-right: 100px; }
-  .section {
-    grid-area: section; }
-  nav {
-    grid-area: nav; }
-  aside {
-    grid-area: aside; }
-  main {
-    grid-area: main; }
-  article {
-    grid-area: article; }
-  banner {
-    grid-area: banner; }
-  footer {
-    grid-area: footer; } }
+    margin-right: 100px; } }
