@@ -14,15 +14,16 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    
-    background-color: #85ffbe3a, url(https://thumbs.dreamstime.com/z/fondo-blanco-aislado-hombre-del-jugador-de-tenis-padel-un-cauc-sico-que-juega-al-la-paleta-en-el-144685476.jpg);
-    background-image: linear-gradient(45deg, #4bf50d93 0%, #ebfb0e53 100%), url(smashfondo.jpg);
-    clip-path: polygon(0 0, 100% 0%, 100% 84%, 0 100%);
+
+    background-color: #85ffbe3a, url;
+    background-image: linear-gradient(45deg, #4bf50d3b 0%, #ebfb0e53 100%), url(https://thumbs.dreamstime.com/z/fondo-blanco-aislado-hombre-del-jugador-de-tenis-padel-un-cauc-sico-que-juega-al-la-paleta-en-el-144685476.jpg);
+
 
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
- 
+  
+
 
     a:link,
     a:visited,
@@ -33,47 +34,65 @@ body {
 
 /*Logos de pagina*/
 
+
 header {
 
     display: flex;
-    justify-content: center;
-    padding: 5px;
-    border: 10px;
-    background: rgb(168, 168, 175);
-    background: radial-gradient(circle, rgba(168, 168, 175, 1) 0%, rgba(152, 158, 158, 0.630987429151348) 55%, rgba(0, 212, 255, 0.7178221630449055) 100%);
-    border-radius: 10px;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    clip-path: polygon(0 0, 100% 0%, 100% 84%, 0 91%);
 
-    img {
-        width: 10rem;
-        height: 5rem;
-        padding: 5px;
-    }
+    a {
+        &:hover {
 
-    img {
-        width: 7rem;
-        height: 5rem;
+            text-decoration: underline;
+            transition: 0.5s;
+            color: red;
+
+
+        }
+
     }
 }
+
 
 
 /* Estilo create acount*/
 
 aside {
+
     display: flex;
     justify-content: center;
     font-family: 'Tomorrow', sans-serif;
     text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: aliceblue;
-    border: inset;
-    border-radius: 10px;
-    border-color: #FFFFFF;
-    font-size: 1.05rem;
+    color: black;
+    opacity: 75%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+    border-radius: 1.5rem;
     font-style: bold;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-top: 1rem;
+    border-color: gray;
+
+    h1 {
+        font-size: 3rem;
+
+        opacity: 100%;
+    }
+
+
 
     p {
-        text-decoration: underline;
+        font-size: 1.5rem;
+    }
+
+    a {
+        font-size: 1rem;
+        border-top: 1rem;
+        border-color: gray;
     }
 
 
@@ -99,6 +118,8 @@ section {
             color: black;
             opacity: 95%;
             text-decoration: bold;
+
+
 
         }
     }
@@ -165,7 +186,7 @@ nav {
 }
 
 main {
-    p {
+    a {
         text-align: center;
         color: rgb(7, 7, 102);
         margin: 10px;
@@ -176,10 +197,11 @@ main {
         border: inset;
         border-radius: 10px;
         font-size: 1.05rem;
+        opacity: 85%;
 
         &:hover {
             transition: 0.5s;
-            color: blue;
+            color: red;
 
         }
     }
