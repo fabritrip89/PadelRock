@@ -16,11 +16,14 @@
 @each $red, $color in $redes {
     .btn--#{$red} {
         background-color: $color;
+     width: 100%;
+     margin-bottom: 1rem;
+        
     }
  }
 
  .boton {
-	width:200px;
+	width:100%;
 	height:50px;
 	background-color:white;
 	text-align:center;
@@ -35,7 +38,7 @@
 	@extend .boton;
 	background-color:green;
 	color:yellow;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 /*Mixind*/

@@ -1,19 +1,27 @@
 @charset "UTF-8";
 /*MAPSSSSSSSSSSSSSSSSSSS*/
 .btn--twitter {
-  background-color: #55acee; }
+  background-color: #55acee;
+  width: 100%;
+  margin-bottom: 1rem; }
 
 .btn--facebook {
-  background-color: #3a5795; }
+  background-color: #3a5795;
+  width: 100%;
+  margin-bottom: 1rem; }
 
 .btn--send-mail {
-  background-color: #C25E30; }
+  background-color: #C25E30;
+  width: 100%;
+  margin-bottom: 1rem; }
 
 .btn--wtsp {
-  background-color: red; }
+  background-color: red;
+  width: 100%;
+  margin-bottom: 1rem; }
 
 .boton, .test--extend {
-  width: 200px;
+  width: 100%;
   height: 50px;
   background-color: white;
   text-align: center;
@@ -25,7 +33,7 @@
 .test--extend {
   background-color: green;
   color: yellow;
-  margin: 1rem; }
+  margin-bottom: 1rem; }
 
 /*Mixind*/
 .test-mixing {
