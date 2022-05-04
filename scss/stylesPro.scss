@@ -6,8 +6,52 @@
 @import "article";
 @import "banner";
 @import "footer";
+@import "variables";
+
+
+
+
+/*MAPSSSSSSSSSSSSSSSSSSS*/
+
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+ }
+
+ .boton {
+	width:200px;
+	height:50px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius:20px;
+	border:1px solid black;
+}
+
+/*Extend*/
+
+.test--extend{
+	@extend .boton;
+	background-color:green;
+	color:yellow;
+    margin: 1rem;
+}
+
+/*Mixind*/
+
+@mixin customStyles($width, $bg) {
+    background-color: $bg;
+    width: $width;
+ }
+ .test-mixing {
+    @include customStyles(100%, blue);
+ }
+ 
 
 /*proximamente tema navidad o festivos con los imports*/
+
+
 
 
 /*TAMAÑO CELULAR*/

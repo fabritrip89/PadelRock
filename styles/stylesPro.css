@@ -1,4 +1,37 @@
 @charset "UTF-8";
+/*MAPSSSSSSSSSSSSSSSSSSS*/
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--send-mail {
+  background-color: #C25E30; }
+
+.btn--wtsp {
+  background-color: red; }
+
+.boton, .test--extend {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
+
+/*Extend*/
+.test--extend {
+  background-color: green;
+  color: yellow;
+  margin: 1rem; }
+
+/*Mixind*/
+.test-mixing {
+  background-color: blue;
+  width: 100%; }
+
 /*proximamente tema navidad o festivos con los imports*/
 /*TAMAÑO CELULAR*/
 body {
