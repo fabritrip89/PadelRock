@@ -66,15 +66,14 @@ body {
 
 /*Logos de pagina*/
 header {
-  display: flex;
-  justify-content: left;
   padding: 1rem;
   border: 3rem;
   background-color: #74ebd530;
   background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
   header img {
     width: 100%;
-    height: 7rem; }
+    height: 7.5rem;
+    margin: 0%; }
 
 nav {
   opacity: 85%; }
@@ -107,11 +106,13 @@ aside .textosAside {
     color: white;
     text-decoration: underline; }
 
+/*
 .wave {
-  position: absolute;
-  bottom: 0%;
-  width: 100%; }
-
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+*/
 section p {
   text-align: right;
   font-family: 'Tomorrow', sans-serif;
@@ -130,39 +131,20 @@ section a:hover {
   opacity: 95%;
   text-decoration: bold; }
 
-nav {
-  align-items: center; }
-  nav p {
-    font-family: 'Tomorrow', sans-serif;
-    font-size: 1.05rem;
-    text-align: right; }
-  nav .navbar-toggler {
+main {
+  opacity: 85%; }
+  main .containetMain {
     display: flex;
-    justify-content: left; }
-
-main p {
-  text-align: center;
-  color: #070766;
-  margin: 10px;
-  display: block;
-  font-family: 'Tomorrow', sans-serif;
-  background: white;
-  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-  border: inset;
-  border-radius: 10px;
-  font-size: 1.05rem; }
-  main p:hover {
-    transition: 0.5s;
-    color: blue; }
-
-main iframe {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border-color: #0505ac;
-  width: 22rem;
-  height: 9rem;
-  margin: auto; }
+    justify-content: space-evenly;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
+    background-attachment: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; }
+    main .containetMain img {
+      width: 3rem; }
 
 article p {
   text-align: center;
@@ -187,41 +169,6 @@ article iframe {
   width: 22rem;
   height: 9rem;
   margin: auto; }
-
-/*Estilos banner-----------------------------------------------------------*/
-banner p {
-  text-align: center;
-  color: #070766;
-  margin: 10px;
-  display: block;
-  font-family: 'Tomorrow', sans-serif;
-  background: white;
-  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-  border: inset;
-  border-radius: 10px;
-  font-size: 1.05rem; }
-  banner p:hover {
-    transition: 0.5s;
-    color: blue; }
-
-banner .caja2 {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0.5rem;
-  padding: 0.5rem; }
-  banner .caja2 img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    border: inset; }
-
-banner p1 {
-  font-family: 'Tomorrow', sans-serif;
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 0.2rem;
-  display: flex;
-  flex-wrap: wrap; }
 
 footer .caja2 {
   display: flex;
