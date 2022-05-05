@@ -61,6 +61,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
+    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%), url(https://thumbs.gfycat.com/SandyGenuineBeauceron-max-1mb.gif);
     
    /* background-color: #85ffbe3a, url(https://thumbs.dreamstime.com/z/fondo-blanco-aislado-hombre-del-jugador-de-tenis-padel-un-cauc-sico-que-juega-al-la-paleta-en-el-144685476.jpg);
     background-image: linear-gradient(45deg, #4bf50d93 0%, #ebfb0e53 100%), url(smashfondo.jpg);
@@ -83,11 +84,13 @@ body {
 header {
 
     display: flex;
-    justify-content: center;
-    padding: 5px;
-    border: 10px;
-    background: rgb(168, 168, 175);
-    background: radial-gradient(circle, rgba(168, 168, 175, 1) 0%, rgba(152, 158, 158, 0.630987429151348) 55%, rgba(0, 212, 255, 0.7178221630449055) 100%);
+    justify-content: left;
+    padding: 1rem;
+    border: 3.5rem;
+    background-color: #74ebd530;
+    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%), url(https://thumbs.gfycat.com/SandyGenuineBeauceron-max-1mb.gif);
+ 
+    
     border-radius: 10px;
 
     img {
@@ -150,60 +153,6 @@ section {
         }
     }
 }
-
-/* Estilos Navegador VIEJO
-
-nav {
-    ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        font-family: 'Tomorrow', sans-serif;
-        cursor: pointer;
-        font-size: 15px;
-        background-color: aliceblue;
-        font-family: 'Tomorrow', sans-serif;
-        border: inset;
-        border-radius: 10px;
-        border-color: #FFFFFF;
-    }
-
-    li {
-        list-style-type: none;
-        color: #FFFFFF;
-        padding: 10px;
-    }
-
-    ul ul {
-        position: relative;
-        display: none;
-        display: absolute;
-    }
-
-    ul ul li {
-        display: flex;
-        width: 7rem;
-        padding: 5px;
-    }
-
-    ul ul li a {
-        color: white;
-        width: 10rem;
-
-    }
-
-    ul {
-        li:hover ul {
-            display: flex;
-            justify-content: flex-start;
-            background-color: rgba(12, 88, 138, 0.427);
-            border-radius: 10px;
-        }
-    }
-}
-
-*/
 
 nav {
     font-family: 'Tomorrow', sans-serif;
