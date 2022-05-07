@@ -40,7 +40,6 @@
   background-color: blue;
   width: 100%; }
 
-/*proximamente tema navidad o festivos con los imports*/
 /*TAMAÑO CELULAR*/
 body {
   display: grid;
@@ -50,15 +49,7 @@ body {
   background-attachment: fixed;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
-  /* background-color: #85ffbe3a, url(https://thumbs.dreamstime.com/z/fondo-blanco-aislado-hombre-del-jugador-de-tenis-padel-un-cauc-sico-que-juega-al-la-paleta-en-el-144685476.jpg);
-    background-image: linear-gradient(45deg, #4bf50d93 0%, #ebfb0e53 100%), url(smashfondo.jpg);
-    clip-path: polygon(0 0, 100% 0%, 100% 84%, 0 100%);
-
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
- */ }
+  background-size: cover; }
   body a:link,
   body a:visited,
   body a:active {
@@ -84,7 +75,8 @@ aside .contenedor {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 14rem;
-  opacity: 85%; }
+  opacity: 85%;
+  font-family: 'Tomorrow', sans-serif; }
 
 aside .textosAside {
   padding: 1rem;
@@ -95,41 +87,17 @@ aside .textosAside {
   aside .textosAside .textoPadel {
     font-size: 1rem;
     color: white;
-    text-align: center; }
+    text-align: center;
+    text-decoration: bold; }
   aside .textosAside .textoPadel2 {
-    font-size: 1.20rem;
+    font-size: 1.5rem;
     text-align: center;
     color: white; }
   aside .textosAside .textoPadel3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
     color: white;
     text-decoration: underline; }
-
-/*
-.wave {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-}
-*/
-section p {
-  text-align: right;
-  font-family: 'Tomorrow', sans-serif;
-  font-size: 1.05rem;
-  color: #070766;
-  background: white;
-  background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-  padding: 5px;
-  border: inset;
-  border-radius: 10px; }
-
-section a:hover {
-  text-align: center;
-  transition: 0.5s;
-  color: black;
-  opacity: 95%;
-  text-decoration: bold; }
 
 main .containetMain {
   opacity: 85%;
@@ -157,56 +125,72 @@ main .contenedorPaletas {
     height: 10rem;
     align-items: center; }
 
-article p {
-  text-align: center;
-  color: #070766;
-  margin: 10px;
-  display: block;
+article {
+  opacity: 85%; }
+  article p {
+    text-align: center;
+    color: #070766;
+    display: block;
+    font-family: 'Tomorrow', sans-serif;
+    background: white;
+    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+    font-size: 1.05rem; }
+    article p:hover {
+      transition: 0.5s;
+      color: blue; }
+  article iframe {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 11rem; }
+
+footer {
+  background-color: #74ebd530;
+  background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
+  footer .contenedorFooter {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: 'Tomorrow', sans-serif;
+    padding: 1rem;
+    border: 3rem;
+    font-size: 1.25rem; }
+    footer .contenedorFooter ul {
+      text-align: justify;
+      background-color: rgba(0, 0, 0, 0.25);
+      list-style: none;
+      padding: 0%;
+      margin: 0%;
+      font-size: 1rem; }
+      footer .contenedorFooter ul li {
+        text-align: justify;
+        padding: 0%;
+        border: 0%;
+        text-decoration: none; }
+    footer .contenedorFooter a p {
+      background-color: rgba(0, 0, 0, 0.25);
+      text-align: center;
+      font-size: 1rem; }
+    footer .contenedorFooter .footerCopyright {
+      background-color: rgba(0, 0, 0, 0.25);
+      text-align: center;
+      font-size: 1rem; }
+
+section p {
+  text-align: right;
   font-family: 'Tomorrow', sans-serif;
+  font-size: 1.05rem;
+  color: #070766;
   background: white;
   background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-  border: inset;
-  border-radius: 10px;
-  font-size: 1.05rem; }
-  article p:hover {
-    transition: 0.5s;
-    color: blue; }
-
-article iframe {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border-color: #0505ac;
-  width: 22rem;
-  height: 9rem;
-  margin: auto; }
-
-footer .caja2 {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 1rem;
-  padding: 0.5rem; }
-  footer .caja2 img {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 0.2rem;
-    border: inset;
-    box-shadow: #FFFFFF; }
-
-footer p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   padding: 5px;
-  border: 10px;
-  background: #a8a8af;
-  background: radial-gradient(circle, #a8a8af 0%, rgba(152, 158, 158, 0.630987) 55%, rgba(0, 212, 255, 0.717822) 100%);
-  border-radius: 10px;
-  font-size: 1.05rem; }
+  border: inset;
+  border-radius: 10px; }
 
-footer:hover {
+section a:hover {
+  text-align: center;
   transition: 0.5s;
-  color: blue; }
+  color: black;
+  opacity: 95%;
+  text-decoration: bold; }
 
 /*Paletas posición sobre html palas*/
 .mainCLASEAccesorios {

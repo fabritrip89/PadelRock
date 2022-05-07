@@ -22,7 +22,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="styles\stylesPro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 
@@ -32,7 +35,7 @@
 
 <body>
 
-    
+
 
     <header>
 
@@ -50,29 +53,13 @@
             </button>
             <div class="collapse navbar-collapse animate__animated animate__backInLeft" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="pages/accesorios.html" id="navbarDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Accesorios
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="pages/pelotas.html">Pelotas</a></li>
-                            <li><a class="dropdown-item" href="pages/overgrips.html">OverGrips</a></li>
-                            <li><a class="dropdown-item" href="pages/protectores.html">Protectores</a></li>
-                            <li><a class="dropdown-item" href="pages/dapeners.html">Dapeners</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/accesorios.html">Accesorios</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="pages\indumentaria.html" id="navbarDropdownMenuLink1"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Indumentaria
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="pages\mochilas.html">Bolsos</a></li>
-                            <li><a class="dropdown-item" href="pages\otros.html">Otros</a></li>
 
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/indumentaria.html">Indumentaria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/palas.html">Palas</a>
@@ -93,7 +80,7 @@
 
             <div class="textosAside">
 
-                <div class="textoPadel fs-1">
+                <div class="textoPadel">
                     <h1>PADEL</h1>
                 </div>
                 <div class="textoPadel2 ">
@@ -113,7 +100,6 @@
     </aside>
 
 
-    <!--
     <main>
 
         <div class="containetMain">
@@ -129,131 +115,93 @@
             </div>
 
             <div>
-                <img src="img/sitioSeguro.png"
-                    alt="Sitio seguro">
+                <img src="img/sitioSeguro.png" alt="Sitio seguro">
             </div>
 
         </div>
     </main>
-   
 
-   
-   
+
+
+
     <article>
 
-        <p>Te dejamos un Bonus</p>
+        <div class="contenedorArticle"></div>
 
 
-        <iframe src="https://youtube.com/embed/TNHdjIuD7HQ" rel="nofollow" title="YouTube video player"></iframe>
+        <div>
+            <p> No te pierdas estos consejos!</p>
+        </div>
+
+
+        <iframe src="https://youtube.com/embed/TNHdjIuD7HQ" rel="nofollow" title="YouTube video player" controls
+            autoplay> </iframe>
 
 
 
     </article>
 
- -->
-
-
     <footer>
+        <div class="contenedorFooter">
 
-        <div class="footer-basic">
-            <footer>
-                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-                            class="icon ion-social-snapchat"></i></a><a href="#"><i
-                            class="icon ion-social-twitter"></i></a><a href="#"><i
-                            class="icon ion-social-facebook"></i></a></div>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Home</a></li>
-                    <li class="list-inline-item"><a href="#">Services</a></li>
-                    <li class="list-inline-item"><a href="#">About</a></li>
-                    <li class="list-inline-item"><a href="#">Terms</a></li>
-                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                </ul>
-                <p class="copyright">Padel Rock © 2022</p>
-            </footer>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+            
 
+
+
+                <div class="row">
+                    <div class="col-lg-3 mb-3">
+                        <a class="d-inline-flex align-items-center mb-2 link-dark" href="index.html"
+                            aria-label="Bootstrap">
+                            <img src="img/faviconSinfondo.png" alt="icono pagina">
+                            <span> Padel Rock</span>
+                        </a>
+
+                        <ul>
+                            <li> Podes visitarnos aquí
+                                <a href="https://goo.gl/maps/LEmueKkKYVcuwQV16">Boulevard 3556, </a> Lanus
+                            </li>
+
+                            <li>Te esperamos de L a V de 8 a 20 hs.</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 offset-lg-0 mb-3">
+                        <p>Links</p>
+                        <ul>
+
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/accesorios.html">Accesorios</a></li>
+                            <li><a href="pages/indumentaria.html">Indumentaria</a></li>
+                            <li><a href="pages/palas.html">Palas</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <p>Donde Jugar</p>
+                        <ul>
+                            <li><a href="https://goo.gl/maps/LW3yhPj7G1j9niSx6">Banfield Padel Club</a></li>
+                            <li><a href="https://goo.gl/maps/t3nUqiPPYWEkaKur9">El cedro Padel Club</a></li>
+                            <li><a href="https://goo.gl/maps/4w9WuuEWqyvmCzpu8">Tie Break</a></li>
+                            <li><a href="https://goo.gl/maps/znZwA9KHtMiXTCwd7">La Carmela Padel</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerCopyright">
+                        © 2022 Copyright:
+                        <a class="text-reset fw-bold" href="index.html">Padelrock.com</a>
+                    </div>
+
+                </div>
+            </div>
+       
     </footer>
 
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="/docs/5.1/assets/js/docs.min.js"></script>
 
     <script src="js\bootstrap.min.js"></script>
-
-    <!--
-
-    <header>
-
-        <nav>
-
-            <a href="index.html">Home</a>
-            <a href="pages\palas.html">Palas</a>
-            <a href="pages\accesorios.html">Accesorios</a>
-            <a href="pages\otros.html">Nosotros</a>
-
-
-
-        </nav>
-
-        <section class="textosHeader">
-            <h1>Nacidos para ganar</h1>
-            <h2>Toma la rienda del partido</h2>
-
-        </section>
-
-     
-
-    </header>
-
-    <main>
-
-        <section class="contenedor sobre nosotros">
-            <h2 class="titulo">Nuetros productos</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="img\equipo.png" alt="equipo">
-            </div>
-            <div class="contenedor-textox">
-                <h3> <span>1</span>Por qué elegirnos???</h3>
-                <p>Somos una empresa reconocida a nivel nacional, tenemos los mejores productos y precios del mercado.
-                </p>
-                <h3> <span>2</span>Los mejores productos del mercado</h3>
-                <p>Contamos con más de 10 años de trayectoria, y las mejores recomendaciones de clientes.
-                </p>
-
-            </div>
-        </section>
-       
-
-    </main>
-
-
-    <footer>
-
-        <div class="footer-basic">
-            <footer>
-                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-                            class="icon ion-social-snapchat"></i></a><a href="#"><i
-                            class="icon ion-social-twitter"></i></a><a href="#"><i
-                            class="icon ion-social-facebook"></i></a></div>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Home</a></li>
-                    <li class="list-inline-item"><a href="#">Services</a></li>
-                    <li class="list-inline-item"><a href="#">About</a></li>
-                    <li class="list-inline-item"><a href="#">Terms</a></li>
-                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                </ul>
-                <p class="copyright">Padel Rock © 2022</p>
-            </footer>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
-    </footer>
-
-    -->
-
-
 
 
 
