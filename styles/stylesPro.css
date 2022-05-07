@@ -99,31 +99,65 @@ aside .textosAside {
     color: white;
     text-decoration: underline; }
 
-main .containetMain {
-  opacity: 85%;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-  background-attachment: fixed;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover; }
-  main .containetMain img {
-    width: 3rem; }
-
-main .contenedorPaletas {
-  opacity: 85%;
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  main .contenedorPaletas img {
-    opacity: 100%;
-    width: 10rem;
-    height: 10rem;
-    align-items: center; }
+main {
+  font-family: 'Tomorrow', sans-serif; }
+  main .containetMain {
+    opacity: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
+    background-attachment: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; }
+    main .containetMain img {
+      width: 3rem; }
+  main .contenedorPaletas {
+    opacity: 85%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    main .contenedorPaletas td {
+      text-align: center;
+      justify-content: center;
+      width: 50%;
+      height: fit-content; }
+    main .contenedorPaletas img {
+      opacity: 100%;
+      width: 10rem;
+      height: 10rem;
+      align-items: center; }
+    main .contenedorPaletas .nombrePaleta {
+      text-align: center;
+      font-size: larger;
+      font-style: bold; }
+    main .contenedorPaletas .precio {
+      text-align: center;
+      font-style: bold; }
+  main .contenedorPaletasindividuales {
+    opacity: 85%;
+    background-color: white;
+    display: inline-block; }
+    main .contenedorPaletasindividuales td {
+      text-align: center;
+      justify-content: center;
+      width: 50%;
+      height: fit-content; }
+    main .contenedorPaletasindividuales img {
+      opacity: 100%;
+      width: 100%;
+      height: 100%;
+      align-items: center; }
+    main .contenedorPaletasindividuales .nombrePaleta {
+      text-align: center;
+      font-size: larger;
+      font-style: bold; }
+    main .contenedorPaletasindividuales .precio {
+      text-align: center;
+      font-style: bold; }
 
 article {
   opacity: 85%; }
@@ -235,14 +269,6 @@ th {
   font-family: 'Tomorrow', sans-serif;
   margin: 0, 5rem;
   font-weight: bold; }
-
-/*estilos de create acount subir imagen o archivo*/
-.pesoPALetaa {
-  font-family: 'Tomorrow', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1rem;
-  padding: 2rem; }
 
 /*TAMAÑO TABLET------------------------------------------- */
 @media screen and (min-width: 768px) {
