@@ -67,7 +67,8 @@ header {
 
 nav {
   opacity: 95%;
-  display: flex; }
+  display: flex;
+  font-family: 'Tomorrow', sans-serif; }
 
 aside .contenedor {
   background-image: url(../img/fondoPadellllllllllllllllllllllllllllllllll.jpg);
@@ -249,7 +250,8 @@ footer {
   header {
     grid-area: header; }
   nav {
-    grid-area: nav; }
+    grid-area: nav;
+    font-family: 'Tomorrow', sans-serif; }
   aside {
     grid-area: aside; }
     aside .contenedor {
@@ -261,6 +263,9 @@ footer {
       height: 20rem;
       opacity: 95%;
       font-family: 'Tomorrow', sans-serif; }
+      aside .contenedor h1 {
+        text-align: center;
+        margin-top: 3.5rem; }
   main {
     grid-area: main; }
   article {
@@ -278,7 +283,8 @@ footer {
   section {
     grid-area: section; }
   nav {
-    grid-area: nav; }
+    grid-area: nav;
+    font-family: 'Tomorrow', sans-serif; }
   aside {
     grid-area: aside; }
     aside .contenedor {
@@ -290,6 +296,9 @@ footer {
       height: 25rem;
       opacity: 95%;
       font-family: 'Tomorrow', sans-serif; }
+      aside .contenedor h1 {
+        text-align: center;
+        margin-top: 4.5rem; }
   main {
     grid-area: main; }
   article {
