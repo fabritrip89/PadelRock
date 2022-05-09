@@ -62,9 +62,8 @@ header {
   background-color: #74ebd5c9;
   background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
   header img {
-    width: 100%;
-    height: 7.5rem;
-    margin: 0%; }
+    width: 8rem;
+    height: 5rem; }
 
 nav {
   opacity: 95%;
