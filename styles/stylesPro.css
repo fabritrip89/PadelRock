@@ -62,7 +62,7 @@ header {
   background-color: #74ebd5c9;
   background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
   header img {
-    width: 8rem;
+    width: 10rem;
     height: 5rem; }
 
 nav {
@@ -203,7 +203,8 @@ footer {
   footer .contenedorFooter {
     background-color: rgba(0, 0, 0, 0.05);
     font-family: 'Tomorrow', sans-serif;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    width: 100%; }
     footer .contenedorFooter img {
       background: white;
       background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
