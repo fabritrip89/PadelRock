@@ -62,7 +62,7 @@ body {
     background-image: url(../img/imagenBody.png);
     background-attachment: fixed;
     background-attachment: fixed;
-     background-position: center;
+    background-position: center;
     background-size: cover;
 
     a:link,
@@ -82,10 +82,10 @@ header {
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
 
 
-    img{
+    img {
         width: 10rem;
         height: 5rem;
-      
+
     }
 }
 
@@ -108,7 +108,7 @@ aside {
         width: 100%;
         height: 15rem;
 
-       
+
         font-family: 'Tomorrow', sans-serif;
 
     }
@@ -156,8 +156,57 @@ aside {
 
 main {
 
+
+
     font-family: 'Tomorrow', sans-serif;
     opacity: 90%;
+
+
+    /* zoooooooooooooommm a las imagens de accesorios
+    
+    FALTAN RE DIRECCIONAR LINKSSSS*/
+    .image-box {
+
+
+        overflow:visible;
+        
+
+
+        img {
+            max-width: 100%;
+            transition: all 0.4s;
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            height: auto;
+            transform: scale(1);
+            
+
+            &:hover {
+                transform: scale(1.2);
+
+            }
+        }
+
+        .nombreAccesorio {
+            margin: 1.5rem;
+          
+
+        }
+        table{
+            padding: 0.5rem;
+            &:hover {
+                transform: scale(1.2);
+
+            }
+        }
+
+
+        
+
+    }
+
+
 
     .containetMain {
 
@@ -404,6 +453,12 @@ footer {
 
 @media screen and (min-width:768px) {
     body {
+        background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
+        background-image: url(../img/fondoAccesorioss.jpg);
+        background-attachment: fixed;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
 
@@ -416,6 +471,8 @@ footer {
             "footer footer footer"
 
     }
+
+
 
     header {
         grid-area: header;
@@ -440,10 +497,11 @@ footer {
             background-size: 100%;
             width: 100%;
             height: 20rem;
-            
+
             opacity: 95%;
             font-family: 'Tomorrow', sans-serif;
-            h1{
+
+            h1 {
                 text-align: center;
                 margin-top: 3.5rem;
             }
@@ -453,7 +511,6 @@ footer {
 
     main {
         grid-area: main;
-
 
 
 
@@ -481,6 +538,7 @@ footer {
 
 @media screen and (min-width:1280px) {
     body {
+
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "header header header header"
@@ -507,11 +565,13 @@ footer {
         grid-area: nav;
         font-family: 'Tomorrow', sans-serif;
 
+
+
     }
 
     aside {
         grid-area: aside;
-       
+
         .contenedor {
             background-image: url(../img/fondoPadellllllllllllllllllllllllllllllllll.jpg);
             background-attachment: local;
@@ -519,18 +579,18 @@ footer {
             background-size: 100%;
             width: 100%;
             height: 25rem;
-          
+
             opacity: 95%;
             font-family: 'Tomorrow', sans-serif;
 
-             h1{
+            h1 {
                 text-align: center;
                 margin-top: 4.5rem;
             }
-          
-            }
 
-           
+        }
+
+
     }
 
 

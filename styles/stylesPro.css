@@ -105,7 +105,28 @@ aside {
 
 main {
   font-family: 'Tomorrow', sans-serif;
-  opacity: 90%; }
+  opacity: 90%;
+  /* zoooooooooooooommm a las imagens de accesorios
+    
+    FALTAN RE DIRECCIONAR LINKSSSS*/ }
+  main .image-box {
+    overflow: visible; }
+    main .image-box img {
+      max-width: 100%;
+      transition: all 0.4s;
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      height: auto;
+      transform: scale(1); }
+      main .image-box img:hover {
+        transform: scale(1.2); }
+    main .image-box .nombreAccesorio {
+      margin: 1.5rem; }
+    main .image-box table {
+      padding: 0.5rem; }
+      main .image-box table:hover {
+        transform: scale(1.2); }
   main .containetMain {
     display: flex;
     justify-content: space-evenly;
@@ -248,6 +269,12 @@ footer {
 /*TAMAÑO TABLET------------------------------------------- */
 @media screen and (min-width: 768px) {
   body {
+    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
+    background-image: url(../img/fondoAccesorioss.jpg);
+    background-attachment: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header" "section section section" "nav nav nav" "aside aside aside" "main main main" "article article article" "footer footer footer"; }
   header {
