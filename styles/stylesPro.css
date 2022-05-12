@@ -110,7 +110,10 @@ main {
     
     FALTAN RE DIRECCIONAR LINKSSSS*/ }
   main .image-box {
-    overflow: visible; }
+    overflow: visible;
+    bottom: color blue;
+    text-align: center;
+    padding: 0.5rem; }
     main .image-box img {
       max-width: 100%;
       transition: all 0.4s;
@@ -160,7 +163,8 @@ main {
       font-style: bold; }
     main .contenedorPaletas .precio {
       text-align: center;
-      font-style: bold; }
+      font-style: bold;
+      padding: 0.5rem; }
   main .contenedorPaletasindividuales {
     opacity: 85%;
     background-color: white;
@@ -258,7 +262,7 @@ footer {
       padding: 0.5%;
       margin-left: 0.5rem; }
       footer .contenedorFooter a p img {
-        margin-left: 5%; }
+        margin-left: 0.5%; }
     footer .contenedorFooter .footerCopyright {
       margin: auto;
       padding: auto;
@@ -269,12 +273,13 @@ footer {
 /*TAMAÑO TABLET------------------------------------------- */
 @media screen and (min-width: 768px) {
   body {
-    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-    background-image: url(../img/fondoAccesorioss.jpg);
-    background-attachment: fixed;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    /*
+        background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
+        background-image: url(../img/fondoAccesorioss.jpg);
+        background-attachment: fixed;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header" "section section section" "nav nav nav" "aside aside aside" "main main main" "article article article" "footer footer footer"; }
   header {
@@ -300,6 +305,10 @@ footer {
     grid-area: main; }
   article {
     grid-area: article; }
+    article iframe {
+      width: 50rem;
+      height: 25rem;
+      margin: 0 auto; }
   footer {
     grid-area: footer; } }
 

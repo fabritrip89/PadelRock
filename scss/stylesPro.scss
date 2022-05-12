@@ -168,8 +168,8 @@ main {
     .image-box {
 
 
-        overflow:visible;
-        
+        overflow: visible;
+
 
 
         img {
@@ -180,7 +180,7 @@ main {
             width: 50%;
             height: auto;
             transform: scale(1);
-            
+
 
             &:hover {
                 transform: scale(1.2);
@@ -190,19 +190,23 @@ main {
 
         .nombreAccesorio {
             margin: 1.5rem;
-          
+
 
         }
-        table{
+
+        table {
             padding: 0.5rem;
+
             &:hover {
                 transform: scale(1.2);
 
             }
         }
 
+        bottom : color blue;
+        text-align: center;
+        padding: 0.5rem;
 
-        
 
     }
 
@@ -261,6 +265,7 @@ main {
         .precio {
             text-align: center;
             font-style: bold;
+            padding: 0.5rem;
 
 
         }
@@ -423,7 +428,7 @@ footer {
             margin-left: 0.5rem;
 
             img {
-                margin-left: 5%;
+                margin-left: 0.5%;
             }
 
 
@@ -453,12 +458,14 @@ footer {
 
 @media screen and (min-width:768px) {
     body {
+
+        /*
         background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
         background-image: url(../img/fondoAccesorioss.jpg);
         background-attachment: fixed;
         background-attachment: fixed;
         background-position: center;
-        background-size: cover;
+        background-size: cover; */
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
 
@@ -521,6 +528,13 @@ footer {
 
         grid-area: article;
 
+        iframe {
+            width: 50rem;
+            height: 25rem;
+            margin: 0 auto;
+            
+
+        }
 
 
     }
