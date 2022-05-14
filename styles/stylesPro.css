@@ -228,7 +228,7 @@ footer {
   background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
   display: flex;
   color: #FFFFFF;
-  opacity: 90%; }
+  opacity: 95%; }
   footer .contenedorFooter {
     background-color: rgba(0, 0, 0, 0.05);
     font-family: 'Tomorrow', sans-serif;
@@ -254,15 +254,15 @@ footer {
       footer .contenedorFooter ul li {
         text-align: left;
         text-decoration: none;
-        margin: 0.5%;
+        margin: 0%;
         padding: 0%; }
     footer .contenedorFooter a p {
       background-color: rgba(0, 0, 0, 0.25);
       font-size: 1rem;
-      padding: 0.5%;
+      padding: 0%;
       margin-left: 0.5rem; }
       footer .contenedorFooter a p img {
-        margin-left: 0.5%; }
+        margin-left: 0%; }
     footer .contenedorFooter .footerCopyright {
       margin: auto;
       padding: auto;
