@@ -92,7 +92,7 @@ header {
 nav {
     opacity: 85%;
     display: flex;
-    font-family: 'Tomorrow', sans-serif;
+  
 
 }
 
@@ -167,10 +167,7 @@ main {
     FALTAN RE DIRECCIONAR LINKSSSS*/
     .image-box {
 
-
         overflow: visible;
-
-
 
         img {
             max-width: 100%;
@@ -181,7 +178,6 @@ main {
             height: auto;
             transform: scale(1);
 
-
             &:hover {
                 transform: scale(1.2);
 
@@ -191,30 +187,20 @@ main {
         .nombreAccesorio {
             margin: 1.5rem;
 
-
         }
 
-        table {
-            padding: 0.5rem;
-
-            &:hover {
-                transform: scale(1.2);
-
-            }
-        }
-
-        bottom : color blue;
-        text-align: center;
-        padding: 0.5rem;
 
     }
+
+    /* estilos tabla paletas individuales*/
+
 
 
 
     .containetMain {
 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: row;
 
         background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
         background-attachment: fixed;
@@ -242,6 +228,7 @@ main {
             justify-content: center;
             width: 50%;
             height: fit-content;
+            font-style: bold;
 
         }
 
@@ -257,15 +244,25 @@ main {
         .nombrePaleta {
             text-align: center;
             font-size: larger;
-            font-style: bold;
+
 
         }
 
         .precio {
             text-align: center;
-            font-style: bold;
             padding: 0.5rem;
+            font-size: 1.1rem;
+        }
 
+        .cuotasSinteres {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.148);
+
+        }
+
+        .nombreAccesorio {
+            text-transform: uppercase;
+            text-align: center;
 
         }
 
@@ -296,12 +293,6 @@ main {
         .nombrePaleta {
             text-align: center;
             font-size: larger;
-            font-style: bold;
-
-        }
-
-        .precio {
-            text-align: center;
             font-style: bold;
 
         }
@@ -364,15 +355,15 @@ article {
     }
 
     iframe {
-        display: flex;
+        display: block;
         width: 100%;
-        height: 500px;
+        height: 10rem;
 
     }
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.50);
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
     display: flex;
     color: #FFFFFF;
@@ -381,7 +372,7 @@ footer {
 
     .contenedorFooter {
 
-        background-color: rgba(0, 0, 0, 0.05);
+        background-color: rgba(0, 0, 0, 0.25);
         font-family: 'Tomorrow', sans-serif;
         font-size: 1.25rem;
         width: 100%;
@@ -412,28 +403,42 @@ footer {
             li {
                 text-align: left;
                 text-decoration: none;
-                margin: 0%;
+                margin: 0.5%;
                 padding: 0%;
 
             }
 
         }
 
-        a p {
+        a {
+            
 
-            background-color: rgba(0, 0, 0, 0.25);
             font-size: 1rem;
             padding: 0%;
             margin-left: 0.5rem;
+            
 
             img {
                 margin-left: 0%;
             }
-
-
         }
 
+        p {
+            text-align: center;
+            color: rgb(7, 7, 102);
+            display: block;
+            font-family: 'Tomorrow', sans-serif;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+            font-size: 1rem;
+            margin-top: 0%;
+            margin-bottom: 0%;
 
+            &:hover {
+                transition: 0.5s;
+                color: blue;
+            }
+        }
 
         .footerCopyright {
             margin: auto;
@@ -441,8 +446,6 @@ footer {
             background-color: rgba(0, 0, 0, 0.25);
             text-align: center;
             font-size: 1rem;
-
-
 
         }
 
@@ -502,14 +505,16 @@ footer {
             background-repeat: no-repeat;
             background-size: 100%;
             width: 100%;
-            height: 20rem;
+            height: 18rem;
 
             opacity: 95%;
-            font-family: 'Tomorrow', sans-serif;
+            
 
             h1 {
                 text-align: center;
-                margin-top: 3.5rem;
+                margin-top: 2.5rem;
+                font-style: bold;
+               
             }
 
         }
@@ -528,8 +533,8 @@ footer {
         grid-area: article;
 
         iframe {
-            width: 50rem;
-            height: 25rem;
+            width: 45rem;
+            height: 20rem;
             margin: 0 auto;
             
 
@@ -541,6 +546,8 @@ footer {
 
     footer {
         grid-area: footer;
+        
+
 
     }
 
