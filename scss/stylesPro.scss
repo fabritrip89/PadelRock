@@ -77,7 +77,7 @@ body {
 header {
 
     padding: 1rem;
-    border: 3rem;
+    border: 1rem;
     background-color: #74ebd5c9;
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
 
@@ -92,7 +92,7 @@ header {
 nav {
     opacity: 85%;
     display: flex;
-  
+
 
 }
 
@@ -411,12 +411,12 @@ footer {
         }
 
         a {
-            
+
 
             font-size: 1rem;
             padding: 0%;
             margin-left: 0.5rem;
-            
+
 
             img {
                 margin-left: 0%;
@@ -440,14 +440,7 @@ footer {
             }
         }
 
-        .footerCopyright {
-            margin: auto;
-            padding: auto;
-            background-color: rgba(0, 0, 0, 0.25);
-            text-align: center;
-            font-size: 1rem;
-
-        }
+      
 
     }
 
@@ -468,8 +461,12 @@ footer {
         background-attachment: fixed;
         background-position: center;
         background-size: cover; */
+
+
+        
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
+        
 
             "header header header"
             "section section section"
@@ -479,18 +476,24 @@ footer {
             "article article article"
             "footer footer footer"
 
+            
     }
 
 
 
     header {
-        grid-area: header;
-
+        grid-area: header;   
+    
+        img {
+            width: 15rem;
+            height: 10rem;
+    
+        }
     }
 
     nav {
         grid-area: nav;
-        font-family: 'Tomorrow', sans-serif;
+      
 
 
     }
@@ -500,21 +503,17 @@ footer {
         grid-area: aside;
 
         .contenedor {
-            background-image: url(../img/fondoPadellllllllllllllllllllllllllllllllll.jpg);
-            background-attachment: local;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 100%;
-            height: 18rem;
-
-            opacity: 95%;
+          
             
+            height: 18rem;
+            opacity: 95%;
+
 
             h1 {
                 text-align: center;
                 margin-top: 2.5rem;
                 font-style: bold;
-               
+
             }
 
         }
@@ -536,8 +535,13 @@ footer {
             width: 45rem;
             height: 20rem;
             margin: 0 auto;
-            
+            padding-bottom: 0.5rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
 
+        p{
+            padding: 0.5rem;
         }
 
 
@@ -546,7 +550,7 @@ footer {
 
     footer {
         grid-area: footer;
-        
+     
 
 
     }
@@ -572,6 +576,11 @@ footer {
 
     header {
         grid-area: header;
+        img {
+            width: 17rem;
+            height: 11rem;
+    
+        }
 
 
     }
@@ -593,19 +602,15 @@ footer {
         grid-area: aside;
 
         .contenedor {
-            background-image: url(../img/fondoPadellllllllllllllllllllllllllllllllll.jpg);
-            background-attachment: local;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 100%;
-            height: 25rem;
+           
+           
+            height: 20rem;
 
-            opacity: 95%;
-            font-family: 'Tomorrow', sans-serif;
+           
 
             h1 {
                 text-align: center;
-                margin-top: 4.5rem;
+                margin-top: 2.5rem;
             }
 
         }
@@ -623,6 +628,16 @@ footer {
 
     article {
         grid-area: article;
+        iframe {
+            
+            padding-bottom: 0.5rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        p{
+            padding: 0.5rem;
+        }
 
 
     }
@@ -631,6 +646,12 @@ footer {
     footer {
         grid-area: footer;
 
+        .contenedorFooter {
+            columns: 6;
+
+        }
+   
+       
 
     }
 
