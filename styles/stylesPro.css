@@ -40,7 +40,7 @@
   background-color: blue;
   width: 100%; }
 
-/*TAMAÑO CELULAR*/
+/*TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR */
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -105,10 +105,9 @@ aside {
 main {
   font-family: 'Tomorrow', sans-serif;
   opacity: 90%;
-  /* zoooooooooooooommm a las imagens de accesorios
-    
-    FALTAN RE DIRECCIONAR LINKSSSS*/
-  /* estilos tabla paletas individuales*/ }
+  /* zoooooooooooooommm y tamaños
+     a las imagens de accesorios*/
+  /* estilos tabla paletas y paletas individuales*/ }
   main .image-box {
     overflow: visible; }
     main .image-box img {
@@ -123,17 +122,6 @@ main {
         transform: scale(1.2); }
     main .image-box .nombreAccesorio {
       margin: 1.5rem; }
-  main .containetMain {
-    display: flex;
-    justify-content: row;
-    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-    background-attachment: fixed;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover; }
-    main .containetMain img {
-      width: 3rem;
-      display: flex; }
   main .contenedorPaletas {
     opacity: 95%;
     background-color: white;
@@ -157,31 +145,14 @@ main {
     main .contenedorPaletas .precio {
       text-align: center;
       padding: 0.5rem;
-      font-size: 1.1rem; }
+      font-size: 1.1rem;
+      border-bottom: red; }
     main .contenedorPaletas .cuotasSinteres {
       text-align: center;
       background-color: rgba(0, 0, 0, 0.148); }
     main .contenedorPaletas .nombreAccesorio {
       text-transform: uppercase;
       text-align: center; }
-  main .contenedorPaletasindividuales {
-    opacity: 85%;
-    background-color: white;
-    display: inline-block; }
-    main .contenedorPaletasindividuales td {
-      text-align: center;
-      justify-content: center;
-      width: 50%;
-      height: fit-content; }
-    main .contenedorPaletasindividuales img {
-      opacity: 100%;
-      width: 100%;
-      height: 100%;
-      align-items: center; }
-    main .contenedorPaletasindividuales .nombrePaleta {
-      text-align: center;
-      font-size: larger;
-      font-style: bold; }
   main section {
     opacity: 90%;
     display: block;
@@ -217,7 +188,9 @@ article {
   article iframe {
     display: block;
     width: 100%;
-    height: 10rem; }
+    height: 10rem;
+    background-color: #74ebd5c9;
+    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
 
 footer {
   background-color: rgba(0, 0, 0, 0.5);
@@ -308,9 +281,7 @@ footer {
       width: 45rem;
       height: 20rem;
       margin: 0 auto;
-      padding-bottom: 0.5rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem; }
+      padding: 0.5rem; }
     article p {
       padding: 0.5rem; }
   footer {
@@ -340,6 +311,20 @@ footer {
         margin-top: 2.5rem; }
   main {
     grid-area: main; }
+    main .contenedorPaletas img {
+      width: 30rem;
+      height: 20rem;
+      display: flex;
+      flex-wrap: wrap; }
+    main .contenedorPaletas .image-box {
+      overflow: visible; }
+      main .contenedorPaletas .image-box img {
+        width: 20rem;
+        height: 15rem;
+        display: flex;
+        justify-content: space-evenly; }
+        main .contenedorPaletas .image-box img:hover {
+          transform: scale(1.1); }
   article {
     grid-area: article; }
     article iframe {
@@ -349,6 +334,4 @@ footer {
     article p {
       padding: 0.5rem; }
   footer {
-    grid-area: footer; }
-    footer .contenedorFooter {
-      columns: 6; } }
+    grid-area: footer; } }

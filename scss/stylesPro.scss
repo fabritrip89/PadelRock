@@ -54,7 +54,7 @@ $color in $redes {
 }
 
 
-/*TAMAÑO CELULAR*/
+/*TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR */
 body {
     display: grid;
     grid-template-columns: 1fr;
@@ -162,9 +162,9 @@ main {
     opacity: 90%;
 
 
-    /* zoooooooooooooommm a las imagens de accesorios
-    
-    FALTAN RE DIRECCIONAR LINKSSSS*/
+    /* zoooooooooooooommm y tamaños
+     a las imagens de accesorios*/
+
     .image-box {
 
         overflow: visible;
@@ -189,32 +189,10 @@ main {
 
         }
 
-
     }
 
-    /* estilos tabla paletas individuales*/
+    /* estilos tabla paletas y paletas individuales*/
 
-
-
-
-    .containetMain {
-
-        display: flex;
-        justify-content: row;
-
-        background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-        background-attachment: fixed;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-
-        img {
-            width: 3rem;
-            display: flex;
-
-
-        }
-    }
 
     .contenedorPaletas {
         opacity: 95%;
@@ -222,7 +200,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-
+  
         td {
             text-align: center;
             justify-content: center;
@@ -245,13 +223,13 @@ main {
             text-align: center;
             font-size: larger;
 
-
         }
 
         .precio {
             text-align: center;
             padding: 0.5rem;
             font-size: 1.1rem;
+            border-bottom: red;
         }
 
         .cuotasSinteres {
@@ -263,37 +241,6 @@ main {
         .nombreAccesorio {
             text-transform: uppercase;
             text-align: center;
-
-        }
-
-    }
-
-    .contenedorPaletasindividuales {
-        opacity: 85%;
-        background-color: white;
-        display: inline-block;
-
-
-        td {
-            text-align: center;
-            justify-content: center;
-            width: 50%;
-            height: fit-content;
-
-        }
-
-        img {
-            opacity: 100%;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-
-        }
-
-        .nombrePaleta {
-            text-align: center;
-            font-size: larger;
-            font-style: bold;
 
         }
 
@@ -358,6 +305,8 @@ article {
         display: block;
         width: 100%;
         height: 10rem;
+        background-color: #74ebd5c9;
+        background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
 
     }
 }
@@ -440,8 +389,6 @@ footer {
             }
         }
 
-      
-
     }
 
 
@@ -463,10 +410,10 @@ footer {
         background-size: cover; */
 
 
-        
+
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-        
+
 
             "header header header"
             "section section section"
@@ -476,24 +423,24 @@ footer {
             "article article article"
             "footer footer footer"
 
-            
+
     }
 
 
 
     header {
-        grid-area: header;   
-    
+        grid-area: header;
+
         img {
             width: 15rem;
             height: 10rem;
-    
+
         }
     }
 
     nav {
         grid-area: nav;
-      
+
 
 
     }
@@ -503,8 +450,8 @@ footer {
         grid-area: aside;
 
         .contenedor {
-          
-            
+
+
             height: 18rem;
             opacity: 95%;
 
@@ -535,12 +482,10 @@ footer {
             width: 45rem;
             height: 20rem;
             margin: 0 auto;
-            padding-bottom: 0.5rem;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+            padding: 0.5rem;
         }
 
-        p{
+        p {
             padding: 0.5rem;
         }
 
@@ -550,7 +495,7 @@ footer {
 
     footer {
         grid-area: footer;
-     
+
 
 
     }
@@ -576,10 +521,11 @@ footer {
 
     header {
         grid-area: header;
+
         img {
             width: 17rem;
             height: 11rem;
-    
+
         }
 
 
@@ -602,11 +548,11 @@ footer {
         grid-area: aside;
 
         .contenedor {
-           
-           
+
+
             height: 20rem;
 
-           
+
 
             h1 {
                 text-align: center;
@@ -623,19 +569,58 @@ footer {
     main {
         grid-area: main;
 
+        .contenedorPaletas {
+
+            img {
+
+                width: 30rem;
+                height: 20rem;
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .image-box {
+
+                overflow: visible;
+
+                img {
+
+                    width: 20rem;
+                    height: 15rem;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    &:hover {
+                        transform: scale(1.1);
+
+                    }
+
+
+
+                }
+            }
+
+
+
+
+
+        }
+
 
     }
 
     article {
         grid-area: article;
+
         iframe {
-            
+
             padding-bottom: 0.5rem;
             padding-left: 0.5rem;
             padding-right: 0.5rem;
         }
 
-        p{
+        p {
             padding: 0.5rem;
         }
 
@@ -645,13 +630,6 @@ footer {
 
     footer {
         grid-area: footer;
-
-        .contenedorFooter {
-            columns: 6;
-
-        }
-   
-       
 
     }
 
