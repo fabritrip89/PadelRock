@@ -275,6 +275,9 @@ footer {
         font-style: bold; }
   main {
     grid-area: main; }
+    main .slide {
+      width: 50%;
+      margin: auto; }
   article {
     grid-area: article; }
     article iframe {
@@ -310,7 +313,11 @@ footer {
         text-align: center;
         margin-top: 2.5rem; }
   main {
-    grid-area: main; }
+    grid-area: main;
+    /*Carrousel tamaño*/ }
+    main .slide {
+      width: 50%;
+      margin: auto; }
     main .contenedorPaletas img {
       width: 30rem;
       height: 20rem;

@@ -200,7 +200,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-  
+
         td {
             text-align: center;
             justify-content: center;
@@ -469,7 +469,17 @@ footer {
     main {
         grid-area: main;
 
+       
+    
+        .slide {
+            
+            width:50%;
+            margin: auto;
+           
 
+        }
+
+      
 
 
     }
@@ -569,6 +579,16 @@ footer {
     main {
         grid-area: main;
 
+        /*Carrousel tamaño*/
+        .slide {
+            
+            width:50%;
+            margin: auto;
+           
+
+        }
+
+
         .contenedorPaletas {
 
             img {
@@ -601,12 +621,7 @@ footer {
                 }
             }
 
-
-
-
-
         }
-
 
     }
 
