@@ -179,17 +179,13 @@ main {
 
 article {
   opacity: 90%;
-  padding: 0.5rem; }
+  margin: 0.5rem; }
   article p {
     text-align: center;
     color: #070766;
-    display: block;
-    font-family: 'Tomorrow', sans-serif;
     background: white;
     background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-    font-size: 1.05rem;
-    margin-top: 0%;
-    margin-bottom: 0%; }
+    font-size: 1.05rem; }
     article p:hover {
       transition: 0.5s;
       color: blue; }
