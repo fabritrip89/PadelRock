@@ -67,10 +67,16 @@ header {
 
 nav {
   opacity: 85%;
-  display: flex; }
+  display: flex;
+  padding: 0.5rem; }
 
 aside {
-  opacity: 90%; }
+  opacity: 90%;
+  padding: 0.5rem;
+  /*Estilos Página de Contacto*/ }
+  aside .sectionForm {
+    margin: 15rem;
+    padding: 15rem; }
   aside .contenedor {
     background-image: url(../img/fondoPadellllllllllllllllllllllllllllllllll.jpg);
     background-attachment: local;
@@ -105,6 +111,7 @@ aside {
 main {
   font-family: 'Tomorrow', sans-serif;
   opacity: 90%;
+  padding: 0.5rem;
   /* zoooooooooooooommm y tamaños
      a las imagens de accesorios*/
   /* estilos tabla paletas y paletas individuales*/ }
@@ -171,7 +178,8 @@ main {
       background-color: rgba(0, 0, 0, 0.741); }
 
 article {
-  opacity: 90%; }
+  opacity: 90%;
+  padding: 0.5rem; }
   article p {
     text-align: center;
     color: #070766;
@@ -193,16 +201,15 @@ article {
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
   display: flex;
   color: #FFFFFF;
-  opacity: 95%; }
+  opacity: 95%;
+  padding: 0.5rem; }
   footer .contenedorFooter {
-    background-color: rgba(0, 0, 0, 0.25);
-    font-family: 'Tomorrow', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.25rem;
-    width: 100%; }
+    width: 100%;
+    padding: 0.5rem; }
     footer .contenedorFooter img {
       background: white;
       background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
@@ -222,9 +229,7 @@ footer {
       padding: 0%; }
       footer .contenedorFooter ul li {
         text-align: left;
-        text-decoration: none;
-        margin: 0.5%;
-        padding: 0%; }
+        text-decoration: none; }
     footer .contenedorFooter a {
       font-size: 1rem;
       padding: 0%;
@@ -235,12 +240,9 @@ footer {
       text-align: center;
       color: #070766;
       display: block;
-      font-family: 'Tomorrow', sans-serif;
       background: white;
       background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-      font-size: 1rem;
-      margin-top: 0%;
-      margin-bottom: 0%; }
+      font-size: 1rem; }
       footer .contenedorFooter p:hover {
         transition: 0.5s;
         color: blue; }
