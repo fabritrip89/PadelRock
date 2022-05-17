@@ -72,14 +72,34 @@ body {
     }
 }
 
+.bodyPalas{
+    background-image: url(../img/fondoAccesorioss.jpg) ;
+
+}
+.bodyAccesorios{
+    background-image: url(../img/oooooooooooooooooooooooooooooooooooooooooo.avif);
+
+}
+
+.bodyIndumentaria{
+    background-image: url(../img/fondoAcesorios.jpeg);
+}
+
+.bodyPalasindiv{
+    background-image: url(../img/paletasIndividuales.jpg);
+}
+
+
+
 /*Logos de pagina*/
 
 header {
 
-    padding: 1rem;
-    border: 1rem;
+   
     background-color: #74ebd5c9;
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
+    padding: 1rem;
+    border: 1rem;
 
 
     img {
@@ -87,12 +107,16 @@ header {
         height: 5rem;
 
     }
+
+    .fondoHeader{ margin: 0.5rem;
+
+    }
 }
 
-nav {
-    opacity: 85%;
+.navbar {
+    opacity: 90%;
     display: flex;
-    padding: 0.5rem;
+    margin: 0.5rem;
 
 
 }
@@ -171,9 +195,12 @@ main {
 
 
 
-    font-family: 'Tomorrow', sans-serif;
+
     opacity: 90%;
-    padding: 0.5rem;
+
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.3rem;
 
 
     /* zoooooooooooooommm y tamaños
@@ -199,7 +226,9 @@ main {
         }
 
         .nombreAccesorio {
-            margin: 1.5rem;
+            margin: 1rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1rem;
 
         }
 
@@ -214,6 +243,8 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding: 0.3rem;
+        margin: 0.2rem;
 
         td {
             text-align: center;
@@ -229,13 +260,15 @@ main {
             width: 10rem;
             height: 10rem;
             align-items: center;
-            opacity: 100%;
+            
+
 
         }
 
         .nombrePaleta {
             text-align: center;
             font-size: larger;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
         }
 
@@ -244,11 +277,14 @@ main {
             padding: 0.5rem;
             font-size: 1.1rem;
             border-bottom: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
         .cuotasSinteres {
             text-align: center;
             background-color: rgba(0, 0, 0, 0.148);
+            border: black;
+            
 
         }
 

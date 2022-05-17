@@ -55,20 +55,34 @@ body {
   body a:active {
     text-decoration: none; }
 
+.bodyPalas {
+  background-image: url(../img/fondoAccesorioss.jpg); }
+
+.bodyAccesorios {
+  background-image: url(../img/oooooooooooooooooooooooooooooooooooooooooo.avif); }
+
+.bodyIndumentaria {
+  background-image: url(../img/fondoAcesorios.jpeg); }
+
+.bodyPalasindiv {
+  background-image: url(../img/paletasIndividuales.jpg); }
+
 /*Logos de pagina*/
 header {
-  padding: 1rem;
-  border: 1rem;
   background-color: #74ebd5c9;
-  background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
+  background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
+  padding: 1rem;
+  border: 1rem; }
   header img {
     width: 10rem;
     height: 5rem; }
+  header .fondoHeader {
+    margin: 0.5rem; }
 
-nav {
-  opacity: 85%;
+.navbar {
+  opacity: 90%;
   display: flex;
-  padding: 0.5rem; }
+  margin: 0.5rem; }
 
 aside {
   opacity: 90%;
@@ -109,9 +123,10 @@ aside {
       text-decoration: underline; }
 
 main {
-  font-family: 'Tomorrow', sans-serif;
   opacity: 90%;
-  padding: 0.5rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-bottom: 0.3rem;
   /* zoooooooooooooommm y tamaños
      a las imagens de accesorios*/
   /* estilos tabla paletas y paletas individuales*/ }
@@ -128,13 +143,17 @@ main {
       main .image-box img:hover {
         transform: scale(1.2); }
     main .image-box .nombreAccesorio {
-      margin: 1.5rem; }
+      margin: 1rem;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1rem; }
   main .contenedorPaletas {
     opacity: 95%;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding: 0.3rem;
+    margin: 0.2rem; }
     main .contenedorPaletas td {
       text-align: center;
       justify-content: center;
@@ -144,19 +163,21 @@ main {
     main .contenedorPaletas img {
       width: 10rem;
       height: 10rem;
-      align-items: center;
-      opacity: 100%; }
+      align-items: center; }
     main .contenedorPaletas .nombrePaleta {
       text-align: center;
-      font-size: larger; }
+      font-size: larger;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
     main .contenedorPaletas .precio {
       text-align: center;
       padding: 0.5rem;
       font-size: 1.1rem;
-      border-bottom: red; }
+      border-bottom: red;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
     main .contenedorPaletas .cuotasSinteres {
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.148); }
+      background-color: rgba(0, 0, 0, 0.148);
+      border: black; }
     main .contenedorPaletas .nombreAccesorio {
       text-transform: uppercase;
       text-align: center; }
