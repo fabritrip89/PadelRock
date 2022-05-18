@@ -59,7 +59,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 80%);
-     background-attachment: fixed;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 
@@ -71,26 +71,33 @@ body {
 }
 
 
-.bodyIndex{
-    background-image: url(../img/fondoPagina.jpg);
+.bodyIndex {
+    background-image: url(../img/imagenIndex.png);
 }
 
-.bodyPalas{
-    background-image: url(../img/fondoAccesorioss.jpg) ;
-
-}
-.bodyAccesorios{
-    background-image: url(../img/oooooooooooooooooooooooooooooooooooooooooo.avif);
+.bodyPalas {
+    background-image: url(../img/fondoAccesorioss.jpg);
 
 }
 
-.bodyIndumentaria{
+.bodyAccesorios {
+    background-image: url(../img/fondoAccesorios.jpg);
+
+}
+
+.bodyIndumentaria {
     background-image: url(../img/fondoAcesorios.jpeg);
 }
 
-.bodyPalasindiv{
+.bodyPalasindiv {
     background-image: url(../img/paletasIndividuales.jpg);
 }
+
+.bodyRegisttrate {
+    background-image: url(../img/padelRegistrate.png);
+}
+
+
 
 
 
@@ -98,7 +105,7 @@ body {
 
 header {
 
-   
+
     background-color: #74ebd5c9;
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
     padding: 1rem;
@@ -111,16 +118,16 @@ header {
 
     }
 
-    .fondoHeader{ margin: 0.5rem;
+    .fondoHeader {
+        margin: 0.5rem;
 
     }
+
+
 }
 
 .navbar {
     opacity: 95%;
-    display: flex;
-    
-   
 
 
 }
@@ -128,19 +135,52 @@ header {
 aside {
 
     opacity: 90%;
-    
-  
-  
 
     /*Estilos Página de Contacto*/
 
     .sectionForm {
-        margin: 15rem;
-        padding: 15rem;
+
+        background: rgba(0, 0, 0, 0.70);
+        font-family: 'Tomorrow', sans-serif;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        color: #FFFFFF;
+
+        .sectionEdad {
+            margin-top: 2rem;
+            font-family: 'Tomorrow', sans-serif;
+
+
+        }
+
+        .sectionFoto {
+            background: rgba(0, 0, 0, 0.50);
+            text-align: center;
+            font-family: 'Tomorrow', sans-serif;
+            color: #FFFFFF;
+
+
+        }
+
+        .sectionPreguntas {
+
+            text-align: left;
+            font-family: 'Tomorrow', sans-serif;
+            margin-left: 0.5rem;
+
+        }
+
+        a {
+            margin: 0%;
+            padding: 0%;
+            text-align: center;
+        }
     }
 
 
 
+
+    /* Estilos fondo de index*/
 
     .contenedor {
         background-image: url(../img/fondoPadellllllllllllllllllllllllllllllllll.jpg);
@@ -149,8 +189,6 @@ aside {
         background-size: 100%;
         width: 100%;
         height: 15rem;
-
-
         font-family: 'Tomorrow', sans-serif;
 
     }
@@ -200,9 +238,10 @@ aside {
 main {
     font-family: 'Tomorrow', sans-serif;
     opacity: 95%;
-    padding: 1rem;
-   margin: 0.5rem;
-  
+    padding: 0.15rem;
+    margin: 0.15rem;
+
+
 
 
     /* zoooooooooooooommm y tamaños
@@ -222,7 +261,7 @@ main {
             transform: scale(1);
 
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.1);
 
             }
         }
@@ -251,7 +290,7 @@ main {
         td {
             text-align: center;
             justify-content: center;
-            width: 50%;
+            width: 100%;
             height: fit-content;
             font-style: bold;
 
@@ -262,7 +301,7 @@ main {
             width: 10rem;
             height: 10rem;
             align-items: center;
-            
+
 
 
         }
@@ -286,7 +325,7 @@ main {
             text-align: center;
             background-color: rgba(0, 0, 0, 0.148);
             border: black;
-            
+
 
         }
 
@@ -298,21 +337,19 @@ main {
 
     }
 
+    /*Seccion paletas individuales*/
+
+   
+
     section {
 
         opacity: 90%;
         display: block;
-        margin-top: 0%;
-        margin-bottom: 0%;
+        text-align: center;
+        padding: 0.15rem;
+        margin: 0.15rem;
 
-
-        .table {
-            text-align: center;
-            margin-bottom: 0%;
-            padding-bottom: 0%;        
-
-
-        }
+       
 
         p {
             color: white;
@@ -333,19 +370,17 @@ main {
 
 article {
     font-family: 'Tomorrow', sans-serif;
-    opacity: 90%;
-    padding: 1rem;
-    margin: 0.5rem;
-   
+    opacity: 95%;
+    padding: 0.25rem;
+    margin: 0.25rem;
+
 
 
     p {
         text-align: center;
         color: rgb(7, 7, 102);
-        padding: 0.5rem;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
-        font-size: 1.05rem;
-        
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 80%);
+        font-size: 1rem;
         &:hover {
             transition: 0.5s;
             color: blue;
@@ -354,56 +389,24 @@ article {
 
     iframe {
         display: block;
-       
         width: 100%;
         height: 15rem;
         margin: auto;
-      
+
     }
 }
 
-/*revisaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarrr
-
-section{
-    background-image: url(../img/fondopalasIndividuales.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
-    height: 3rem;
-    margin: 0.3rem;
-    
-    
-    p {
-        font-family: 'Tomorrow', sans-serif;
-        opacity: 90%;
-        margin: 0.5rem;
-        padding: 5rem;  
-        text-align: center;
-        color: rgb(7, 7, 102);
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
-        font-size: 1.05rem;
-        
-        &:hover {
-            transition: 0.5s;
-            color: blue;
-        }
-        }
-
-}
-
-*/
-
 footer {
-  
+
     display: flex;
     color: #FFFFFF;
     opacity: 95%;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
 
     .contenedorFooter {
 
-        background-color: rgba(0, 0, 0, 0.50);
+        background: rgba(0, 0, 0, 0.70);
 
         font-size: 1.25rem;
         width: 100%;
@@ -435,7 +438,7 @@ footer {
             li {
                 text-align: left;
                 text-decoration: none;
-                
+
 
             }
 
@@ -458,11 +461,8 @@ footer {
             text-align: center;
             color: white;
             display: block;
-          
-            background: rgb(11, 10, 10);
-         
+            background: rgba(0, 0, 0, 0.15);
             font-size: 1rem;
-           
 
             &:hover {
                 transition: 0.5s;
@@ -475,26 +475,13 @@ footer {
 
 }
 
-
 /*TAMAÑO TABLET------------------------------------------- */
-
 
 @media screen and (min-width:768px) {
     body {
 
-        /*
-        background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-        background-image: url(../img/fondoAccesorioss.jpg);
-        background-attachment: fixed;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover; */
-
-
-
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-
 
             "header header header"
             "section section section"
@@ -504,10 +491,7 @@ footer {
             "article article article"
             "footer footer footer"
 
-
     }
-
-
 
     header {
         grid-area: header;
@@ -521,9 +505,6 @@ footer {
 
     nav {
         grid-area: nav;
-
-
-
     }
 
 
@@ -539,7 +520,7 @@ footer {
 
             h1 {
                 text-align: center;
-                margin-top: 2.5rem;
+                margin-top: 2.3rem;
                 font-style: bold;
 
             }
@@ -549,25 +530,18 @@ footer {
 
     main {
         grid-area: main;
+
        
-        padding: 2rem;
-        section{
-            margin: 15rem;
-            padding: 3rem;
-        }
-
-
         .slide {
 
-            width: 50%;
+            width: 70%;
             margin: auto;
-
-
         }
-
-
-
-
+        section {
+            margin: 1.5rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
 
 
     }
@@ -577,13 +551,12 @@ footer {
         grid-area: article;
 
         iframe {
-            width: 45rem;
-            height: 20rem;
-            margin: 0 auto;
-            padding: 0.5rem;
+
+            height: 23rem;
         }
 
         p {
+            font-size: 1.2rem;
             padding: 0.5rem;
         }
 
@@ -594,10 +567,7 @@ footer {
     footer {
         grid-area: footer;
 
-
-
     }
-
 
 }
 
@@ -623,10 +593,7 @@ footer {
         img {
             width: 17rem;
             height: 11rem;
-
         }
-
-
     }
 
     section {
@@ -635,10 +602,9 @@ footer {
     }
 
     nav {
+        
         grid-area: nav;
         font-family: 'Tomorrow', sans-serif;
-
-
 
     }
 
@@ -667,7 +633,7 @@ footer {
     main {
         grid-area: main;
 
-     
+
 
         /*Carrousel tamaño*/
         .slide {
@@ -718,14 +684,16 @@ footer {
         grid-area: article;
 
         iframe {
+            height: 39rem;
+            padding: 0%;
 
-            padding-bottom: 0.5rem;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+        
         }
 
         p {
             padding: 0.5rem;
+            margin-top: 2rem;
+            font-size: 1.4rem;
         }
 
 

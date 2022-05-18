@@ -15,7 +15,7 @@
     <meta name="google-site-verification" content="4bJBmnF5sEyYjIWEi6nbOFMRSy3cm7K37VmpZpYDnVw" />
     <meta name="category" content="deportes">
     <meta itemprop="telephone" content="12345678900">
-    <title>Accesorios </title>
+    <title>Registrate </title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +27,13 @@
         content="La mejor página de padel, el mas rapido asesoramiento, compra seguro y al mejor precio.">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="../styles/stylesPro.css">
+
 
 </head>
 
-<body class="bodyAccesorios">
+<body class="bodyRegisttrate">
 
     <header>
 
@@ -52,11 +54,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
                     </li>
-                
 
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/indumentaria.html">Indumentaria</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/logearse.html">Logearse</a>
                     </li>
@@ -66,164 +68,160 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/registrate.html">Registrate</a>
+                        <a class="nav-link" href="registrate.html">Registrate</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <aside>
 
-    <main>
+        <div class="sectionForm">
 
-        <div class="contenedorPaletas">
 
             <div>
-                <div class="image-box">
-                    <table class="table table-dark table-sm">
-                        <td> <span> 15 % OFF </span> </td>
+                <form>
+                    <div class=" mb-3">
+                        <label for="exampleInputEmail1" class="sectionEdad form-label">Nombre de Usuario</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nosotros nunca compartiremos estos datos.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                  
+                </form>
 
-                    </table>
-
-
-                    <img class="animate__animated animate__zoomIn" src="../img/pelotas.jpg" alt="Paleta Nox">
-                    <div class="nombreAccesorio"> Pelotas Adidas</div>
-
-                    <div class="cuotasSinteres"> En Stock </div>
-                    <div class="precio"> $ 1.500</div>
-
-                </div>
             </div>
 
 
-            <div>
-                <div class="image-box">
-                    <table class="table table-dark table-sm">
-                        <td> <span> 15 % OFF </span> </td>
-
-                    </table>
-
-
-                    <img class="animate__animated animate__zoomIn" src="../img/protector 3m.jpg" alt="Paleta Nox">
-                    <div class="nombreAccesorio"> Protector 3m</div>
-
-                    <div class="cuotasSinteres"> En Stock </div>
-                    <div class="precio"> $ 1.500</div>
-
+            <div class=" sectionEdad row">
+                <div class=" col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                 </div>
-            </div>
-
-
-            <div>
-                <div class="image-box">
-                    <table class="table table-dark table-sm">
-                        <td> <span> 15 % OFF </span> </td>
-
-                    </table>
-
-
-                    <img class="animate__animated animate__zoomIn" src="../img/xgrip.jpg" alt="Paleta Nox">
-                    <div class="nombreAccesorio">X - Grip Pro</div>
-
-                    <div class="cuotasSinteres"> En Stock </div>
-                    <div class="precio"> $ 4.000</div>
-
+                <div class=" col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                 </div>
             </div>
 
             <div>
-                <div class="image-box">
-                    <table class="table table-dark table-sm">
-                        <td> <span> 15 % OFF </span> </td>
+                <select class="sectionEdad form-select" aria-label="Default select example">
+                    <option selected>Edad</option>
+                    <option value="1">15 a 18 Años</option>
+                    <option value="2">18 a 35 Años</option>
+                    <option value="3">35 a 65 Años</option>
+                </select>
 
-                    </table>
-
-
-                    <img class="animate__animated animate__zoomIn" src="../img/dapeneramarillo.jpg" alt="Paleta Nox">
-                    <div class="nombreAccesorio"> ShockOut </div>
-
-                    <div class="cuotasSinteres"> En Stock</div>
-                    <div class="precio"> $ 1.500</div>
-
-                </div>
             </div>
+
+       
+
+            <div class="sectionEdad input-group mb-3">
+                <input type="text" class=" form-control" placeholder="Mail" aria-label="Username">
+                <span class=" input-group-text">@</span>
+                <input type="text" class=" form-control" placeholder="Mail" aria-label="Server">
+            </div>
+
+            <div class="sectionFoto mb-3">
+                <label for=" formFile" class=" form-label">Foto DNI Frente:</label>
+                <input class=" form-control" type="file" id="formFile">
+            </div>
+
+            <div class="sectionFoto mb-3">
+                <label for="formFile" class=" form-label">Foto DNI Dorso:</label>
+                <input class="form-control" type="file" id="formfile">
+
+            </div>
+
+
+
+            <div class="sectionFoto"><label for=" formFile" class=" form-label">Cuéntanos sobre vos:</label>
+
+            </div>
+
+            <div class="sectionPreguntas">
+
+                <div class=" form-check">
+                    <input class=" form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="fotosDni form-check-label" for="flexCheckDefault">
+                        Juegas al padel?
+                    </label>
+                </div>
+                <div class=" form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class=" fotosDni form-check-label" for="flexCheckChecked">
+                        Jugar Torneos?
+                    </label>
+                </div>
+                <div class=" form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckchecked">
+                    <label class=" fotosDni form-check-label" for="flexCheckChecked">
+                        Te gustaría jugar Torneos?
+                    </label>
+                </div>
+
+                <div class=" form-check">
+                    <input class=" form-check-input" type="checkbox" value="" id="flexcheckDefault">
+                    <label class="fotosDni form-check-label" for="flexCheckDefault">
+                        Estás Federedado?
+                    </label>
+                </div>
+                <div class=" form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexcheckchecked">
+                    <label class=" fotosDni form-check-label" for="flexCheckChecked">
+                        Trabajas?
+                    </label>
+                </div>
+
+             
+
+                <div class=" form-check">
+                    <input class=" form-check-input" type="checkbox" value="" id="flexcheckdefault">
+                    <label class="fotosDni form-check-label" for="flexCheckDefault">
+                        Juegas al padel
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="sectionFoto">Hasta cuanto pagarías por una Paleta?</div>
+
+
+
+            <div class="sectionFoto input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
+            </div>
+
+
+
+            <div class="sectionPreguntas form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Recibir Novedadespor Mail</label>
+            </div>
+
+            <div class="sectionPreguntas form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckdefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Acepto los términos y condiciones</label>
+            </div>
+
             <div>
-                <div class="image-box">
-                    <table class="table table-dark table-sm">
-                        <td> <span> 15 % OFF </span> </td>
 
-                    </table>
-
-
-                    <img class="animate__animated animate__zoomIn" src="../img/dapenerazul.jpg" alt="Paleta Nox">
-                    <div class="nombreAccesorio"> ShockOut Azul</div>
-
-                    <div class="cuotasSinteres">En Stock </div>
-                    <div class="precio"> $ 1.500</div>
-
+                <div class="sectionEdad d-grid gap-2 col-6 mx-auto">
+                    <a href="../index.html"> <button class="btn btn-primary" type="button">Registrarse</button></a>
                 </div>
+
             </div>
-            <div>
-                <div class="image-box">
-                    <table class="table table-dark table-sm">
-                        <td> <span> 15 % OFF </span> </td>
-
-                    </table>
-
-
-                    <img class="animate__animated animate__zoomIn" src="../img/munequera.jpg" alt="Paleta Nox">
-                    <div class="nombreAccesorio"> Muñequera</div>
-
-                    <div class="cuotasSinteres"> En Stock </div>
-                    <div class="precio"> $ 2.500</div>
-
-                </div>
-            </div>
-            <div>
-                <div class="image-box">
-                    <table class="table table-dark table-sm">
-                        <td> <span> 15 % OFF </span> </td>
-
-                    </table>
-
-
-                    <img class="animate__animated animate__zoomIn" src="../img/overgrip.jpg" alt="Paleta Nox">
-                    <div class="nombreAccesorio"> Muñequeras x3</div>
-
-                    <div class="cuotasSinteres"> En Stock </div>
-                    <div class="precio"> $ 3.500</div>
-
-                </div>
-            </div>
-            <div>
-                <div class="image-box">
-                    <table class="table table-dark table-sm">
-                        <td> <span> 15 % OFF </span> </td>
-
-                    </table>
-
-
-                    <img class="animate__animated animate__zoomIn" src="../img/overgripstarvie.jpg" alt="Paleta Nox">
-                    <div class="nombreAccesorio">Grip StarVie</div>
-
-                    <div class="cuotasSinteres"> En Stock </div>
-                    <div class="precio"> $ 1.500</div>
-
-                </div>
-            </div>
-
-
-
 
         </div>
 
 
 
 
-    </main>
-
-
-
+    </aside>
 
     <footer>
         <div class="contenedorFooter">
@@ -283,6 +281,8 @@
 
 
 
+
+
             </div>
         </div>
 
@@ -300,8 +300,5 @@
     <script src="../js/bootstrap.min.js"></script>
 
 </body>
-
-
-
 
 </html>

@@ -54,19 +54,22 @@ body {
     text-decoration: none; }
 
 .bodyIndex {
-  background-image: url(../img/fondoPagina.jpg); }
+  background-image: url(../img/imagenIndex.png); }
 
 .bodyPalas {
   background-image: url(../img/fondoAccesorioss.jpg); }
 
 .bodyAccesorios {
-  background-image: url(../img/oooooooooooooooooooooooooooooooooooooooooo.avif); }
+  background-image: url(../img/fondoAccesorios.jpg); }
 
 .bodyIndumentaria {
   background-image: url(../img/fondoAcesorios.jpeg); }
 
 .bodyPalasindiv {
   background-image: url(../img/paletasIndividuales.jpg); }
+
+.bodyRegisttrate {
+  background-image: url(../img/padelRegistrate.png); }
 
 /*Logos de pagina*/
 header {
@@ -81,15 +84,34 @@ header {
     margin: 0.5rem; }
 
 .navbar {
-  opacity: 95%;
-  display: flex; }
+  opacity: 95%; }
 
 aside {
   opacity: 90%;
-  /*Estilos Página de Contacto*/ }
+  /*Estilos Página de Contacto*/
+  /* Estilos fondo de index*/ }
   aside .sectionForm {
-    margin: 15rem;
-    padding: 15rem; }
+    background: rgba(0, 0, 0, 0.7);
+    font-family: 'Tomorrow', sans-serif;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: #FFFFFF; }
+    aside .sectionForm .sectionEdad {
+      margin-top: 2rem;
+      font-family: 'Tomorrow', sans-serif; }
+    aside .sectionForm .sectionFoto {
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      font-family: 'Tomorrow', sans-serif;
+      color: #FFFFFF; }
+    aside .sectionForm .sectionPreguntas {
+      text-align: left;
+      font-family: 'Tomorrow', sans-serif;
+      margin-left: 0.5rem; }
+    aside .sectionForm a {
+      margin: 0%;
+      padding: 0%;
+      text-align: center; }
   aside .contenedor {
     background-image: url(../img/fondoPadellllllllllllllllllllllllllllllllll.jpg);
     background-attachment: local;
@@ -124,11 +146,12 @@ aside {
 main {
   font-family: 'Tomorrow', sans-serif;
   opacity: 95%;
-  padding: 1rem;
-  margin: 0.5rem;
+  padding: 0.15rem;
+  margin: 0.15rem;
   /* zoooooooooooooommm y tamaños
      a las imagens de accesorios*/
-  /* estilos tabla paletas y paletas individuales*/ }
+  /* estilos tabla paletas y paletas individuales*/
+  /*Seccion paletas individuales*/ }
   main .image-box {
     overflow: visible; }
     main .image-box img {
@@ -140,7 +163,7 @@ main {
       height: auto;
       transform: scale(1); }
       main .image-box img:hover {
-        transform: scale(1.2); }
+        transform: scale(1.1); }
     main .image-box .nombreAccesorio {
       margin: 1rem;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -156,7 +179,7 @@ main {
     main .contenedorPaletas td {
       text-align: center;
       justify-content: center;
-      width: 50%;
+      width: 100%;
       height: fit-content;
       font-style: bold; }
     main .contenedorPaletas img {
@@ -183,12 +206,9 @@ main {
   main section {
     opacity: 90%;
     display: block;
-    margin-top: 0%;
-    margin-bottom: 0%; }
-    main section .table {
-      text-align: center;
-      margin-bottom: 0%;
-      padding-bottom: 0%; }
+    text-align: center;
+    padding: 0.15rem;
+    margin: 0.15rem; }
     main section p {
       color: white;
       font-size: 1.25rem;
@@ -199,15 +219,14 @@ main {
 
 article {
   font-family: 'Tomorrow', sans-serif;
-  opacity: 90%;
-  padding: 1rem;
-  margin: 0.5rem; }
+  opacity: 95%;
+  padding: 0.25rem;
+  margin: 0.25rem; }
   article p {
     text-align: center;
     color: #070766;
-    padding: 0.5rem;
-    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
-    font-size: 1.05rem; }
+    background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 80%);
+    font-size: 1rem; }
     article p:hover {
       transition: 0.5s;
       color: blue; }
@@ -217,44 +236,14 @@ article {
     height: 15rem;
     margin: auto; }
 
-/*revisaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarrr
-
-section{
-    background-image: url(../img/fondopalasIndividuales.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
-    height: 3rem;
-    margin: 0.3rem;
-    
-    
-    p {
-        font-family: 'Tomorrow', sans-serif;
-        opacity: 90%;
-        margin: 0.5rem;
-        padding: 5rem;  
-        text-align: center;
-        color: rgb(7, 7, 102);
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
-        font-size: 1.05rem;
-        
-        &:hover {
-            transition: 0.5s;
-            color: blue;
-        }
-        }
-
-}
-
-*/
 footer {
   display: flex;
   color: #FFFFFF;
   opacity: 95%;
-  padding: 1rem;
-  margin: 0.5rem; }
+  padding: 0.25rem;
+  margin: 0.25rem; }
   footer .contenedorFooter {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     font-size: 1.25rem;
     width: 100%;
     padding: 0.5rem; }
@@ -288,7 +277,7 @@ footer {
       text-align: center;
       color: white;
       display: block;
-      background: #0b0a0a;
+      background: rgba(0, 0, 0, 0.15);
       font-size: 1rem; }
       footer .contenedorFooter p:hover {
         transition: 0.5s;
@@ -297,13 +286,6 @@ footer {
 /*TAMAÑO TABLET------------------------------------------- */
 @media screen and (min-width: 768px) {
   body {
-    /*
-        background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-        background-image: url(../img/fondoAccesorioss.jpg);
-        background-attachment: fixed;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header" "section section section" "nav nav nav" "aside aside aside" "main main main" "article article article" "footer footer footer"; }
   header {
@@ -320,25 +302,23 @@ footer {
       opacity: 95%; }
       aside .contenedor h1 {
         text-align: center;
-        margin-top: 2.5rem;
+        margin-top: 2.3rem;
         font-style: bold; }
   main {
-    grid-area: main;
-    padding: 2rem; }
-    main section {
-      margin: 15rem;
-      padding: 3rem; }
+    grid-area: main; }
     main .slide {
-      width: 50%;
+      width: 70%;
       margin: auto; }
+    main section {
+      margin: 1.5rem;
+      padding: 1.5rem;
+      text-align: center; }
   article {
     grid-area: article; }
     article iframe {
-      width: 45rem;
-      height: 20rem;
-      margin: 0 auto;
-      padding: 0.5rem; }
+      height: 23rem; }
     article p {
+      font-size: 1.2rem;
       padding: 0.5rem; }
   footer {
     grid-area: footer; } }
@@ -388,10 +368,11 @@ footer {
   article {
     grid-area: article; }
     article iframe {
-      padding-bottom: 0.5rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem; }
+      height: 39rem;
+      padding: 0%; }
     article p {
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      margin-top: 2rem;
+      font-size: 1.4rem; }
   footer {
     grid-area: footer; } }
