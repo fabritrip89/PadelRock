@@ -81,7 +81,7 @@ header {
     margin: 0.5rem; }
 
 .navbar {
-  opacity: 90%;
+  opacity: 95%;
   display: flex; }
 
 aside {
@@ -123,7 +123,7 @@ aside {
 
 main {
   font-family: 'Tomorrow', sans-serif;
-  opacity: 90%;
+  opacity: 95%;
   padding: 1rem;
   margin: 0.5rem;
   /* zoooooooooooooommm y tamaños
@@ -286,10 +286,9 @@ footer {
         margin-left: 0%; }
     footer .contenedorFooter p {
       text-align: center;
-      color: #070766;
+      color: white;
       display: block;
-      background: white;
-      background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
+      background: #0b0a0a;
       font-size: 1rem; }
       footer .contenedorFooter p:hover {
         transition: 0.5s;

@@ -117,7 +117,7 @@ header {
 }
 
 .navbar {
-    opacity: 90%;
+    opacity: 95%;
     display: flex;
     
    
@@ -199,7 +199,7 @@ aside {
 
 main {
     font-family: 'Tomorrow', sans-serif;
-    opacity: 90%;
+    opacity: 95%;
     padding: 1rem;
    margin: 0.5rem;
   
@@ -399,12 +399,12 @@ footer {
     color: #FFFFFF;
     opacity: 95%;
     padding: 1rem;
-   margin: 0.5rem;
+    margin: 0.5rem;
 
     .contenedorFooter {
 
         background-color: rgba(0, 0, 0, 0.50);
-        
+
         font-size: 1.25rem;
         width: 100%;
         padding: 0.5rem;
@@ -456,11 +456,11 @@ footer {
 
         p {
             text-align: center;
-            color: rgb(7, 7, 102);
+            color: white;
             display: block;
           
-            background: rgb(255, 255, 255);
-            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+            background: rgb(11, 10, 10);
+         
             font-size: 1rem;
            
 
