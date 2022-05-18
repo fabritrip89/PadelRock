@@ -59,7 +59,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-    background-image: url(../img/imagenBody.png);
+  
     background-attachment: fixed;
     background-attachment: fixed;
     background-position: center;
@@ -70,6 +70,11 @@ body {
     a:active {
         text-decoration: none;
     }
+}
+
+
+.bodyIndex{
+    background-image: url(../img/fondoPagina.jpg);
 }
 
 .bodyPalas{
@@ -116,7 +121,7 @@ header {
 .navbar {
     opacity: 90%;
     display: flex;
-    margin: 0.5rem;
+   
 
 
 }
@@ -193,14 +198,14 @@ aside {
 
 main {
 
-
-
-
     opacity: 90%;
+    padding: 1rem;
+    section{
+        margin: 5rem;
+        padding: 2rem;
+    }
 
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-    padding-bottom: 0.3rem;
+    
 
 
     /* zoooooooooooooommm y tamaños
@@ -356,7 +361,7 @@ article {
         display: block;
        
         width: 100%;
-        height: 10rem;
+     
         background-color: #74ebd5c9;
         background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
 
@@ -520,7 +525,11 @@ footer {
     main {
         grid-area: main;
        
-
+        padding: 2rem;
+        section{
+            margin: 15rem;
+            padding: 3rem;
+        }
 
 
         .slide {
@@ -530,6 +539,8 @@ footer {
 
 
         }
+
+
 
 
 

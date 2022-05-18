@@ -45,7 +45,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-  background-image: url(../img/imagenBody.png);
   background-attachment: fixed;
   background-attachment: fixed;
   background-position: center;
@@ -54,6 +53,9 @@ body {
   body a:visited,
   body a:active {
     text-decoration: none; }
+
+.bodyIndex {
+  background-image: url(../img/fondoPagina.jpg); }
 
 .bodyPalas {
   background-image: url(../img/fondoAccesorioss.jpg); }
@@ -81,8 +83,7 @@ header {
 
 .navbar {
   opacity: 90%;
-  display: flex;
-  margin: 0.5rem; }
+  display: flex; }
 
 aside {
   opacity: 90%;
@@ -124,12 +125,13 @@ aside {
 
 main {
   opacity: 90%;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding: 1rem;
   /* zoooooooooooooommm y tamaños
      a las imagens de accesorios*/
   /* estilos tabla paletas y paletas individuales*/ }
+  main section {
+    margin: 5rem;
+    padding: 2rem; }
   main .image-box {
     overflow: visible; }
     main .image-box img {
@@ -213,7 +215,6 @@ article {
   article iframe {
     display: block;
     width: 100%;
-    height: 10rem;
     background-color: #74ebd5c9;
     background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
 
@@ -293,7 +294,11 @@ footer {
         margin-top: 2.5rem;
         font-style: bold; }
   main {
-    grid-area: main; }
+    grid-area: main;
+    padding: 2rem; }
+    main section {
+      margin: 15rem;
+      padding: 3rem; }
     main .slide {
       width: 50%;
       margin: auto; }
