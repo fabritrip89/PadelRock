@@ -44,8 +44,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%);
-  background-attachment: fixed;
+  background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 80%);
   background-attachment: fixed;
   background-position: center;
   background-size: cover; }
@@ -87,7 +86,6 @@ header {
 
 aside {
   opacity: 90%;
-  padding: 0.5rem;
   /*Estilos Página de Contacto*/ }
   aside .sectionForm {
     margin: 15rem;
@@ -124,14 +122,13 @@ aside {
       text-decoration: underline; }
 
 main {
+  font-family: 'Tomorrow', sans-serif;
   opacity: 90%;
   padding: 1rem;
+  margin: 0.5rem;
   /* zoooooooooooooommm y tamaños
      a las imagens de accesorios*/
   /* estilos tabla paletas y paletas individuales*/ }
-  main section {
-    margin: 5rem;
-    padding: 2rem; }
   main .image-box {
     overflow: visible; }
     main .image-box img {
@@ -201,12 +198,14 @@ main {
       background-color: rgba(0, 0, 0, 0.741); }
 
 article {
+  font-family: 'Tomorrow', sans-serif;
   opacity: 90%;
+  padding: 1rem;
   margin: 0.5rem; }
   article p {
     text-align: center;
     color: #070766;
-    background: white;
+    padding: 0.5rem;
     background: linear-gradient(90deg, white 0%, rgba(224, 224, 224, 0.944882) 30%);
     font-size: 1.05rem; }
     article p:hover {
@@ -215,14 +214,45 @@ article {
   article iframe {
     display: block;
     width: 100%;
-    background-color: #74ebd5c9;
-    background-image: linear-gradient(90deg, #74ebd525 0%, #9face631 100%); }
+    height: 15rem;
+    margin: auto; }
 
+/*revisaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaarrr
+
+section{
+    background-image: url(../img/fondopalasIndividuales.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 3rem;
+    margin: 0.3rem;
+    
+    
+    p {
+        font-family: 'Tomorrow', sans-serif;
+        opacity: 90%;
+        margin: 0.5rem;
+        padding: 5rem;  
+        text-align: center;
+        color: rgb(7, 7, 102);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 30%);
+        font-size: 1.05rem;
+        
+        &:hover {
+            transition: 0.5s;
+            color: blue;
+        }
+        }
+
+}
+
+*/
 footer {
   display: flex;
   color: #FFFFFF;
   opacity: 95%;
-  padding: 0.5rem; }
+  padding: 1rem;
+  margin: 0.5rem; }
   footer .contenedorFooter {
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.25rem;
@@ -340,7 +370,7 @@ footer {
     grid-area: main;
     /*Carrousel tamaño*/ }
     main .slide {
-      width: 50%;
+      width: 45%;
       margin: auto; }
     main .contenedorPaletas img {
       width: 30rem;
