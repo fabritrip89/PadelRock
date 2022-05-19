@@ -9,9 +9,7 @@
 @import "variables";
 
 
-
-
-/*MAPSSSSSSSSSSSSSSSSSSS*/
+/*Mapas se comenta dado que era para las entregas pasadas
 
 @each $red,
 $color in $redes {
@@ -52,7 +50,7 @@ $color in $redes {
 .test-mixing {
     @include customStyles(100%, blue);
 }
-
+*/
 
 /*TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR TAMAÑO CELULAR */
 body {
