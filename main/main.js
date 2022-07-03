@@ -21,6 +21,8 @@ const search = () => {
   }
 }; */
 
+/* const { x } = require("tar"); */
+
 let contenedorPaletas = document.getElementById("contenedorPaletas");
 
 // Aca modificar precios, nombre, id, descuentos, descripcion, etc...
@@ -64,17 +66,15 @@ let shopItemsData = [
   },
 ];
 
-let basket = [
-  {
-    id: "asdsaddaasd",
-    item: 1,
-  },
-];
+let basket = JSON.parse(localStorage.getItem("data")) || [];
+
+
 
 let generateContenedorPaletas = () => {
   return (contenedorPaletas.innerHTML = shopItemsData
     .map((x) => {
       let { id, name, price, desc, img, discount, offer } = x;
+      let search = basket.find((y) => y.id === id) || [];
       return ` 
     <div id=product-id-${id} class="product">
     <table class="table table-dark table-sm">
@@ -86,7 +86,10 @@ let generateContenedorPaletas = () => {
     <h4 class="nombrePaleta"> ${x.name}</h4>
     <div  class="masOmenos">
         <i onclick="increment(${id})"class="bi bi-plus-lg"></i>
-        <div id=${id} class="cantidad">0</div>
+        <div id=${id} class="cantidad">
+        
+        ${search.item === undefined ? 0 : search.item}
+        </div>
         <i onclick="decrement(${id})"class="bi bi-dash"></i>
     </div>
 
@@ -118,35 +121,42 @@ let increment = (id) => {
     search.item += 1;
   }
 
-  /* console.log(basket); */
+  console.log(basket);
   update(selectedItem.id);
+  localStorage.setItem("data", JSON.stringify(basket));
 };
+
+/**Se utiliza para decrecer la selección de productos  */
+
 let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
 
-  if (search.item === 0) return;
-   else {
+  if (search === undefined) return;
+  else if (search.item === 0) return;
+  else {
     search.item -= 1;
   }
-/*   console.log(basket); */
+
   update(selectedItem.id);
+  basket = basket.filter((x) => x.item !== 0);
+  console.log(basket);
+  localStorage.setItem("data", JSON.stringify(basket));
 };
+
+/**Aca se actualizan los elemenos seleccionads de cada producto */
 
 let update = (id) => {
-  let search = basket.find((x)=>x.id===id);
-  /* console.log(search.item); */
+  let search = basket.find((x) => x.id === id);
   document.getElementById(id).innerHTML = search.item;
-  calculation()
+  calculation();
 };
 
+/**Aca se calcula el total de los items seleccionados*/
 
-let calculation =()=>{
+let calculation = () => {
+  let cardIcon = document.getElementById("cantidad");
+  cardIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
+};
 
-  let cardIcon = document.getElementById ("cantidad")
-  cardIcon.innerHTML =100,
-
-
-  console.log("calculation");
-
-}
+calculation();

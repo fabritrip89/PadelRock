@@ -42,6 +42,26 @@ body {
   gap: 8px;
   font-size: 16px; }
 
+.cart {
+  background-color: #999999;
+  color: #FFFFFF;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  top: -15px; }
+
+.cantidad {
+  font-size: 16px;
+  background-color: red;
+  color: #FFFFFF;
+  position: relative;
+  right: inherit;
+  border-radius: 5px;
+  text-align: center; }
+
+i {
+  cursor: pointer; }
+
 /*Logos de pagina*/
 header {
   background-color: #74ebd5c9;

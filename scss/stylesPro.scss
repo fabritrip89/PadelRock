@@ -55,7 +55,7 @@ body {
 
 //Estilos javascript//@at-root
 
-.buttom{
+.buttom {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -63,16 +63,36 @@ body {
 
 }
 
-.masOmenos{
+.masOmenos {
     display: flex;
     flex-direction: row;
     gap: 8px;
     font-size: 16px;
 }
 
+.cart {
+    background-color: rgb(153, 153, 153);
+    color: #FFFFFF;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    top: -15px;
+}
 
+.cantidad {
+    font-size: 16px;
+    background-color: red;
+    color: #FFFFFF;
+    position: relative;
+    right: inherit;
+    border-radius: 5px;
+   
+    text-align: center;
+}
 
-
+i{
+    cursor: pointer;
+}
 
 
 
@@ -264,27 +284,27 @@ main {
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 0.2rem;
-        margin: 0.2rem;   
-        
+        margin: 0.2rem;
 
-        .product{
+
+        .product {
             border: solid 2px black;
 
         }
 
-        .masOmenos{
+        .masOmenos {
             display: flex;
             justify-content: center;
             padding: 0.15rem;
         }
-        
+
         td {
             text-align: center;
             justify-content: center;
             width: 100%;
             height: fit-content;
             font-style: bold;
-            
+
 
         }
 
@@ -293,16 +313,16 @@ main {
             width: 10rem;
             height: 10rem;
             align-items: center;
-            
+
 
         }
 
         .nombrePaleta {
             text-align: center;
-            
+
             font-family: bold;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-           
+
         }
 
         .precio {
@@ -332,7 +352,7 @@ main {
 
     /*Seccion paletas individuales*/
 
-   
+
 
     section {
 
@@ -342,7 +362,7 @@ main {
         padding: 0.15rem;
         margin: 0.15rem;
 
-       
+
 
         p {
             color: white;
@@ -374,6 +394,7 @@ article {
         color: rgb(7, 7, 102);
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 0.9448821765034139) 80%);
         font-size: 1rem;
+
         &:hover {
             transition: 0.5s;
             color: blue;
@@ -524,12 +545,13 @@ footer {
     main {
         grid-area: main;
 
-       
+
         .slide {
 
             width: 70%;
             margin: auto;
         }
+
         section {
             margin: 1.5rem;
             padding: 1.5rem;
@@ -568,10 +590,10 @@ footer {
 
 @media screen and (min-width:1280px) {
     body {
-        
 
 
-        
+
+
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
             "header header header header"
@@ -583,7 +605,7 @@ footer {
             "footer footer footer footer"
     }
 
-   
+
 
     header {
         grid-area: header;
@@ -600,7 +622,7 @@ footer {
     }
 
     nav {
-        
+
         grid-area: nav;
         font-family: 'Tomorrow', sans-serif;
 
@@ -685,7 +707,7 @@ footer {
             height: 39rem;
             padding: 0%;
 
-        
+
         }
 
         p {
