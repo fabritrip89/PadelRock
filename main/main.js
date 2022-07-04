@@ -1,4 +1,8 @@
-/* const { name } = require("ci-info");
+
+/*Buscador///
+
+
+const { name } = require("ci-info");
 
 const search = () => {
   const searchbox = document.getElementById("search-item").value.toUpperCase();
@@ -19,9 +23,14 @@ const search = () => {
       }
     }
   }
-}; */
+}; 
 
 /* const { x } = require("tar"); */
+
+
+/**
+ * Carrito de Coompras
+ */
 
 let contenedorPaletas = document.getElementById("contenedorPaletas");
 
