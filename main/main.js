@@ -133,6 +133,17 @@ let increment = (id) => {
   console.log(basket);
   update(selectedItem.id);
   localStorage.setItem("data", JSON.stringify(basket));
+
+//** SWEET ICON SUCCES */////////////////////////////////////////////////////////////////////
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Elemento Agregado al Carrito',
+    showConfirmButton: false,
+    timer: 1000
+  })
+
+
 };
 
 /**Se utiliza para decrecer la selección de productos  */
@@ -140,7 +151,7 @@ let increment = (id) => {
 let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
-
+ 
   if (search === undefined) return;
   else if (search.item === 0) return;
   else {
@@ -149,8 +160,30 @@ let decrement = (id) => {
 
   update(selectedItem.id);
   basket = basket.filter((x) => x.item !== 0);
+
   console.log(basket);
+
   localStorage.setItem("data", JSON.stringify(basket));
+
+ 
+  Swal.fire({
+    title: 'Estas seguro?',
+    text: "Se eliminará el producto del carrito.",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sí, borralo!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Eliminado!',
+        'Se ha quitado del carrito.',
+        'success'
+      )
+    }
+  })
+
 };
 
 /**Aca se actualizan los elemenos seleccionads de cada producto */
