@@ -45,6 +45,11 @@ let shopItemsData = [
     img: "../img/bourne.png",
     discount: 20, // Descuento
     offer: 12, // Cuotas
+    phone: {
+      cel: 125545641,
+      house:null,
+      job:1231546
+    }
   },
   {
     id: "asd",
@@ -54,6 +59,11 @@ let shopItemsData = [
     img: "../img/paletaVarilon.png",
     discount: 17,
     offer: 3,
+    phone: {
+      cel: 125545641,
+      house:null,
+      job:1231546
+    }
   },
   {
     id: "asdsad",
@@ -63,6 +73,11 @@ let shopItemsData = [
     img: "../img/canonFrente.png",
     discount: 21,
     offer: 6,
+    phone: {
+      cel: 125545641,
+      house:null,
+      job:1231546
+    }
   },
   {
     id: "asdsada",
@@ -72,17 +87,22 @@ let shopItemsData = [
     img: "../img/varilonAvant.png",
     discount: 15,
     offer: 3,
+    phone: {
+      cel: 125545641,
+      house:null,
+      job:1231546
+    }
   },
 ];
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 
-
+//**ACA SE APLICA DESETRUCTURACIÓN POR PARÁMETROS *///////////////////////////////////////////////////////
 let generateContenedorPaletas = () => {
   return (contenedorPaletas.innerHTML = shopItemsData
     .map((x) => {
-      let { id, name, price, desc, img, discount, offer } = x;
+      let { id, name, price, desc, img, discount, offer, phone } = x;
       let search = basket.find((y) => y.id === id) || [];
       return ` 
     <div id=product-id-${id} class="product">
@@ -130,14 +150,14 @@ let increment = (id) => {
     search.item += 1;
   }
 
-  console.log(basket);
+  console.log(basket); //**DESESTRUCTURACIÓN EN PARÁMETROS */////////////////////////////////
   update(selectedItem.id);
   localStorage.setItem("data", JSON.stringify(basket));
 };
 
 /**Se utiliza para decrecer la selección de productos  */
 
-let decrement = (id) => {
+ let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
 
@@ -145,7 +165,8 @@ let decrement = (id) => {
   else if (search.item === 0) return;
   else {
     search.item -= 1;
-  }
+  } 
+
 
   update(selectedItem.id);
   basket = basket.filter((x) => x.item !== 0);
