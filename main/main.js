@@ -165,7 +165,7 @@ let decrement = (id) => {
 
   localStorage.setItem("data", JSON.stringify(basket));
 
- 
+ //** SWEET ICON confirmación de eliminar productos del carrito */////////////////////////////////////////////////////////////////////
   Swal.fire({
     title: 'Estas seguro?',
     text: "Se eliminará el producto del carrito.",
@@ -202,3 +202,4 @@ let calculation = () => {
 };
 
 calculation();
+
