@@ -62,6 +62,14 @@ body {
 i {
   cursor: pointer; }
 
+.ContendorBuscadorylogo {
+  display: flex;
+  justify-content: space-around; }
+
+.lupaBuscador {
+  text-align: center;
+  padding-top: 1.5rem; }
+
 /*Logos de pagina*/
 header {
   background-color: #74ebd5c9;
@@ -291,6 +299,8 @@ footer {
     header img {
       width: 15rem;
       height: 10rem; }
+    header .lupaBuscador {
+      padding-top: 4rem; }
   nav {
     grid-area: nav; }
   aside {
